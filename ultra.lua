@@ -1,787 +1,787 @@
--- ROCKET | ULTRA MENU + FARM + SPEED CAR + MON FARM
 
-local player = game.Players.LocalPlayer
-local userInputService = game:GetService("UserInputService")
-local tweens = game:GetService("TweenService")
-local runService = game:GetService("RunService")
-local vim = game:GetService("VirtualInputManager")
 
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "Ultra"
-screenGui.Parent = player:WaitForChild("PlayerGui")
+local efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL = game.Players.LocalPlayer
+local abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV = game:GetService("UserInputService")
+local TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = game:GetService("TweenService")
+local tuvwxyzABCDEFGHIJKLMNOPQRSTUjklmnopqrstuvwxyzABCDEFGHIJlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRrstuvwxyzABCDEFGHIJKLMNOPQfghijklmnRSTUwxyz = game:GetService("RunService")
+local lmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzuvwxyzABCDEFGHIJKLMNOPQRSTUVW = game:GetService("VirtualInputManager")
 
--- ===== КНОПКА ОТКРЫТИЯ МЕНЮ (СЛЕВА, ВСЕГДА ВИДИМА) =====
-local openMenuBtn = Instance.new("TextButton")
-openMenuBtn.Size = UDim2.new(0, 80, 0, 80)
-openMenuBtn.Position = UDim2.new(0, 10, 0.5, -40)
-openMenuBtn.BackgroundColor3 = Color3.fromRGB(100, 0, 180)
-openMenuBtn.BackgroundTransparency = 0
-openMenuBtn.Text = "☰"
-openMenuBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-openMenuBtn.TextScaled = true
-openMenuBtn.Font = Enum.Font.GothamBold
-openMenuBtn.Parent = screenGui
-openMenuBtn.ZIndex = 999
+local ymnopqrstutuvwxyzABCDEFGH = Instance.new("ScreenGui")
+ymnopqrstutuvwxyzABCDEFGH.Name = "Ultra"
+ymnopqrstutuvwxyzABCDEFGH.Parent = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL:WaitForChild("PlayerGui")
 
-local openMenuCorner = Instance.new("UICorner")
-openMenuCorner.CornerRadius = UDim.new(0, 12)
-openMenuCorner.Parent = openMenuBtn
 
--- Анимация пульсации
-task.spawn(function()
+local opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs = Instance.new("TextButton")
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Size = UDim2.new(0, 80, 0, 80)
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Position = UDim2.new(0, 10, 0.5, -40)
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.BackgroundColor3 = Color3.fromRGB(100, 0, 180)
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.BackgroundTransparency = 0
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Text = "☰"
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.TextColor3 = Color3.fromRGB(255, 255, 255)
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.TextScaled = true
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Font = Enum.Font.GothamBold
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Parent = ymnopqrstutuvwxyzABCDEFGH
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.ZIndex = 999
+
+local ijklmnopqrstuvwxy = Instance.new("UICorner")
+ijklmnopqrstuvwxy.CornerRadius = UDim.new(0, 12)
+ijklmnopqrstuvwxy.Parent = opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs
+
+
+task.spawn(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     while true do
         for i = 1, 2 do
-            local pulse = tweens:Create(openMenuBtn, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            local JKLMNOPQRSTuvwxyzABCDEFGHIJKLMNOPQRSbcdDEFGHIJKLMNOPQRSTUVWXtuvwxyzABCDEF = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
                 BackgroundTransparency = 0.3
             })
-            pulse:Play()
+            JKLMNOPQRSTuvwxyzABCDEFGHIJKLMNOPQRSbcdDEFGHIJKLMNOPQRSTUVWXtuvwxyzABCDEF:Play()
             task.wait(0.3)
-            pulse = tweens:Create(openMenuBtn, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            JKLMNOPQRSTuvwxyzABCDEFGHIJKLMNOPQRSbcdDEFGHIJKLMNOPQRSTUVWXtuvwxyzABCDEF = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
                 BackgroundTransparency = 0
             })
-            pulse:Play()
+            JKLMNOPQRSTuvwxyzABCDEFGHIJKLMNOPQRSbcdDEFGHIJKLMNOPQRSTUVWXtuvwxyzABCDEF:Play()
             task.wait(0.3)
         end
         task.wait(2)
     end
 end)
 
--- ===== ОСНОВНОЙ ФРЕЙМ (УВЕЛИЧЕННАЯ ШИРИНА 1000px) =====
-local mainFrame = Instance.new("Frame")
-mainFrame.Size = UDim2.new(0, 1000, 0, 600)
-mainFrame.Position = UDim2.new(0.5, -500, 0.5, -300)
-mainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
-mainFrame.BackgroundTransparency = 0.15
-mainFrame.BorderSizePixel = 0
-mainFrame.Parent = screenGui
 
-local corner = Instance.new("UICorner")
-corner.CornerRadius = UDim.new(0, 10)
-corner.Parent = mainFrame
+local wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl = Instance.new("Frame")
+wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Size = UDim2.new(0, 1000, 0, 600)
+wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Position = UDim2.new(0.5, -500, 0.5, -300)
+wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
+wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BackgroundTransparency = 0.15
+wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BorderSizePixel = 0
+wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Parent = ymnopqrstutuvwxyzABCDEFGH
 
--- ===== ULTRA =====
-local ultraLabel = Instance.new("TextLabel")
-ultraLabel.Size = UDim2.new(0, 100, 0, 25)
-ultraLabel.Position = UDim2.new(0, 15, 0, 10)
-ultraLabel.BackgroundTransparency = 1
-ultraLabel.Text = "ULTRA"
-ultraLabel.TextScaled = true
-ultraLabel.Font = Enum.Font.GothamBold
-ultraLabel.TextXAlignment = Enum.TextXAlignment.Left
-ultraLabel.Parent = mainFrame
+local nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTabcdNOP = Instance.new("UICorner")
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTabcdNOP.CornerRadius = UDim.new(0, 10)
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTabcdNOP.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
 
--- ===== КНОПКА ЗАКРЫТИЯ МЕНЮ (ПРАВЫЙ ВЕРХНИЙ УГОЛ) =====
-local closeMenuBtn = Instance.new("TextButton")
-closeMenuBtn.Size = UDim2.new(0, 30, 0, 30)
-closeMenuBtn.Position = UDim2.new(1, -40, 0, 10)
-closeMenuBtn.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
-closeMenuBtn.BackgroundTransparency = 0
-closeMenuBtn.Text = "✕"
-closeMenuBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-closeMenuBtn.TextScaled = true
-closeMenuBtn.Font = Enum.Font.GothamBold
-closeMenuBtn.Parent = mainFrame
 
-local closeMenuCorner = Instance.new("UICorner")
-closeMenuCorner.CornerRadius = UDim.new(0, 4)
-closeMenuCorner.Parent = closeMenuBtn
+local bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM = Instance.new("TextLabel")
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.Size = UDim2.new(0, 100, 0, 25)
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.Position = UDim2.new(0, 15, 0, 10)
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.BackgroundTransparency = 1
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.Text = "ULTRA"
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.TextScaled = true
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.Font = Enum.Font.GothamBold
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.TextXAlignment = Enum.TextXAlignment.Left
+bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
 
--- ===== ЦВЕТА =====
-local colors = {
+
+local wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG = Instance.new("TextButton")
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.Size = UDim2.new(0, 30, 0, 30)
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.Position = UDim2.new(1, -40, 0, 10)
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.BackgroundTransparency = 0
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.Text = "✕"
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.TextColor3 = Color3.fromRGB(255, 255, 255)
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.TextScaled = true
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.Font = Enum.Font.GothamBold
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
+
+local opqrIJKLMNOPQRSTU = Instance.new("UICorner")
+opqrIJKLMNOPQRSTU.CornerRadius = UDim.new(0, 4)
+opqrIJKLMNOPQRSTU.Parent = wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG
+
+
+local JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF = {
     Color3.fromRGB(100, 0, 180),
     Color3.fromRGB(150, 0, 200),
     Color3.fromRGB(255, 100, 200)
 }
 
--- ===== ПЕРЕЛИВ ULTRA =====
-local colorIndex = 1
-local tween = nil
 
-local function startUltraColorCycle()
-    while ultraLabel and ultraLabel.Parent do
-        local nextColor = colors[colorIndex % #colors + 1]
-        tween = tweens:Create(ultraLabel, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
-            TextColor3 = nextColor
+local lmnopqrsvwxyopqrstuvwxyzABCDEFGHIJKLMNOPQrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrstuvwxyzABCDEFGHIJKLMNOPQR = 1
+local ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWGHIJKLMNOPQRSTUVWDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyz = nil
+
+local BCDEFGHIJKLMNtuvwxyzABCDEFGHIJKLxyzABCDEFGHIJKLMNOPQRSTUVWXYXYZNOPQRSTUVW startUltraColorCycle()
+    while bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM and bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM.Parent do
+        local pqrstuvwcdefghijkdefghijklmnopqrstuvwxyzABCDEFGHIJKLMbcdefghijklmnovwxyzT = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[lmnopqrsvwxyopqrstuvwxyzABCDEFGHIJKLMNOPQrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrstuvwxyzABCDEFGHIJKLMNOPQR % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1]
+        ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWGHIJKLMNOPQRSTUVWDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyz = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMIJKLMNopqrstuvwxyzABCDEFGHIJKLMjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVDEFGHIJKLM, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
+            TextColor3 = ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPPQRopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXLMNOmnopqrstuvwxyzABCDEFGHIJNOPQRSTUVW
         })
-        tween:Play()
-        tween.Completed:Wait()
-        colorIndex = colorIndex % #colors + 1
+        ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWGHIJKLMNOPQRSTUVWDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyz:Play()
+        ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWGHIJKLMNOPQRSTUVWDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyz.Completed:Wait()
+        lmnopqrsvwxyopqrstuvwxyzABCDEFGHIJKLMNOPQrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrstuvwxyzABCDEFGHIJKLMNOPQR = lmnopqrsvwxyopqrstuvwxyzABCDEFGHIJKLMNOPQrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrstuvwxyzABCDEFGHIJKLMNOPQR % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1
     end
 end
 
 coroutine.wrap(startUltraColorCycle)()
 
--- ===== ГОРИЗОНТАЛЬНАЯ ЛИНИЯ =====
-local horizontalLine = Instance.new("Frame")
-horizontalLine.Size = UDim2.new(1, -30, 0, 2)
-horizontalLine.Position = UDim2.new(0, 15, 0, 38)
-horizontalLine.BackgroundColor3 = colors[1]
-horizontalLine.BackgroundTransparency = 0
-horizontalLine.BorderSizePixel = 0
-horizontalLine.Parent = mainFrame
 
--- ===== ВЕРТИКАЛЬНАЯ ЛИНИЯ =====
-local verticalLine = Instance.new("Frame")
-verticalLine.Size = UDim2.new(0, 2, 1, -45)
-verticalLine.Position = UDim2.new(0, 135, 0, 38)
-verticalLine.BackgroundColor3 = colors[1]
-verticalLine.BackgroundTransparency = 0
-verticalLine.BorderSizePixel = 0
-verticalLine.Parent = mainFrame
+local HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB = Instance.new("Frame")
+HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.Size = UDim2.new(1, -30, 0, 2)
+HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.Position = UDim2.new(0, 15, 0, 38)
+HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.BackgroundColor3 = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[1]
+HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.BackgroundTransparency = 0
+HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.BorderSizePixel = 0
+HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
 
--- ===== ПЕРЕЛИВ ЛИНИЙ =====
-local lineColorIndex = 1
-local lineTween = nil
 
-local function startLineColorCycle()
-    while horizontalLine and horizontalLine.Parent and verticalLine and verticalLine.Parent do
-        local nextColor = colors[lineColorIndex % #colors + 1]
-        lineTween = tweens:Create(horizontalLine, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
-            BackgroundColor3 = nextColor
+local abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ = Instance.new("Frame")
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.Size = UDim2.new(0, 2, 1, -45)
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.Position = UDim2.new(0, 135, 0, 38)
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.BackgroundColor3 = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[1]
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.BackgroundTransparency = 0
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.BorderSizePixel = 0
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
+
+
+local ijkrstuvwxyzABCDEFGstuvwxyzABCDEF = 1
+local uvwxyzABCDEFabcdefghijklmnopqrstuvwxyzABCDEFGHItuvwxyzABCDEFGHIJKLMNOPQA = nil
+
+local pqrstuvwxyzABnopjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS startLineColorCycle()
+    while HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB and HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB.Parent and abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ and abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ.Parent do
+        local stuvwxyzABCDEijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXMNOPQ = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[ijkrstuvwxyzABCDEFGstuvwxyzABCDEF % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1]
+        uvwxyzABCDEFabcdefghijklmnopqrstuvwxyzABCDEFGHItuvwxyzABCDEFGHIJKLMNOPQA = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(HIJKLMNOPQRSTUVWXpqrstuvwxyzABCDEFGHIJKLMNOPSTUVghijklmnopqrstuvwxyzAB, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
+            BackgroundColor3 = ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPPQRopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXLMNOmnopqrstuvwxyzABCDEFGHIJNOPQRSTUVW
         })
-        lineTween:Play()
-        lineTween = tweens:Create(verticalLine, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
-            BackgroundColor3 = nextColor
+        uvwxyzABCDEFabcdefghijklmnopqrstuvwxyzABCDEFGHItuvwxyzABCDEFGHIJKLMNOPQA:Play()
+        uvwxyzABCDEFabcdefghijklmnopqrstuvwxyzABCDEFGHItuvwxyzABCDEFGHIJKLMNOPQA = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLRSTdefghijklmndefghijklmnopqrstuvwxyzABCDEFGHIJ, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
+            BackgroundColor3 = ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPPQRopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXLMNOmnopqrstuvwxyzABCDEFGHIJNOPQRSTUVW
         })
-        lineTween:Play()
-        lineTween.Completed:Wait()
-        lineColorIndex = lineColorIndex % #colors + 1
+        uvwxyzABCDEFabcdefghijklmnopqrstuvwxyzABCDEFGHItuvwxyzABCDEFGHIJKLMNOPQA:Play()
+        uvwxyzABCDEFabcdefghijklmnopqrstuvwxyzABCDEFGHItuvwxyzABCDEFGHIJKLMNOPQA.Completed:Wait()
+        ijkrstuvwxyzABCDEFGstuvwxyzABCDEF = ijkrstuvwxyzABCDEFGstuvwxyzABCDEF % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1
     end
 end
 
 coroutine.wrap(startLineColorCycle)()
 
--- ============================================================
--- ===== КОНТЕЙНЕР ДЛЯ ВКЛАДОК =====
--- ============================================================
-local contentContainer = Instance.new("Frame")
-contentContainer.Size = UDim2.new(1, -150, 1, -50)
-contentContainer.Position = UDim2.new(0, 140, 0, 45)
-contentContainer.BackgroundTransparency = 1
-contentContainer.Parent = mainFrame
 
--- ===== ГЛОБАЛЬНЫЕ КРЕДИТЫ (ВИДНЫ ВО ВСЕХ ВКЛАДКАХ) =====
-local globalCredits = Instance.new("TextLabel")
-globalCredits.Size = UDim2.new(1, -150, 0, 30)
-globalCredits.Position = UDim2.new(0, 140, 1, -40)
-globalCredits.BackgroundTransparency = 1
-globalCredits.Text = "Made by AA-Scripts ; t.me/AAscripts"
-globalCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
-globalCredits.TextScaled = true
-globalCredits.Font = Enum.Font.GothamMedium
-globalCredits.TextXAlignment = Enum.TextXAlignment.Center
-globalCredits.TextYAlignment = Enum.TextYAlignment.Center
-globalCredits.Parent = mainFrame
 
--- ============================================================
--- ===== HOME PANEL (ГЛАВНАЯ ВКЛАДКА) =====
--- ============================================================
-local homePanel = Instance.new("Frame")
-homePanel.Size = UDim2.new(1, 0, 1, 0)
-homePanel.Position = UDim2.new(0, 0, 0, 0)
-homePanel.BackgroundTransparency = 1
-homePanel.BorderSizePixel = 0
-homePanel.Visible = true
-homePanel.Parent = contentContainer
 
-local welcomeLabel = Instance.new("TextLabel")
-welcomeLabel.Size = UDim2.new(1, 0, 0, 60)
-welcomeLabel.Position = UDim2.new(0, 0, 0.3, -30)
-welcomeLabel.BackgroundTransparency = 1
-welcomeLabel.Text = "ДОБРО ПОЖАЛОВАТЬ В ULTRA"
-welcomeLabel.TextScaled = true
-welcomeLabel.Font = Enum.Font.GothamBold
-welcomeLabel.TextXAlignment = Enum.TextXAlignment.Center
-welcomeLabel.TextYAlignment = Enum.TextYAlignment.Center
-welcomeLabel.Parent = homePanel
+local MNvwxyzABCDEFGHIJKLMNOPQ = Instance.new("Frame")
+MNvwxyzABCDEFGHIJKLMNOPQ.Size = UDim2.new(1, -150, 1, -50)
+MNvwxyzABCDEFGHIJKLMNOPQ.Position = UDim2.new(0, 140, 0, 45)
+MNvwxyzABCDEFGHIJKLMNOPQ.BackgroundTransparency = 1
+MNvwxyzABCDEFGHIJKLMNOPQ.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
 
-local welcomeColorIndex = 1
-local welcomeTween = nil
 
-local function startWelcomeColorCycle()
-    while welcomeLabel and welcomeLabel.Parent do
-        local nextColor = colors[welcomeColorIndex % #colors + 1]
-        welcomeTween = tweens:Create(welcomeLabel, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
-            TextColor3 = nextColor
+local ghijklmnopqrstuvuvwxyzABCD = Instance.new("TextLabel")
+ghijklmnopqrstuvuvwxyzABCD.Size = UDim2.new(1, -150, 0, 30)
+ghijklmnopqrstuvuvwxyzABCD.Position = UDim2.new(0, 140, 1, -40)
+ghijklmnopqrstuvuvwxyzABCD.BackgroundTransparency = 1
+ghijklmnopqrstuvuvwxyzABCD.Text = "Made by AA-Scripts ; t.me/AAscripts"
+ghijklmnopqrstuvuvwxyzABCD.TextColor3 = Color3.fromRGB(255, 255, 255)
+ghijklmnopqrstuvuvwxyzABCD.TextScaled = true
+ghijklmnopqrstuvuvwxyzABCD.Font = Enum.Font.GothamMedium
+ghijklmnopqrstuvuvwxyzABCD.TextXAlignment = Enum.TextXAlignment.Center
+ghijklmnopqrstuvuvwxyzABCD.TextYAlignment = Enum.TextYAlignment.Center
+ghijklmnopqrstuvuvwxyzABCD.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
+
+
+
+
+local lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW = Instance.new("Frame")
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Size = UDim2.new(1, 0, 1, 0)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Position = UDim2.new(0, 0, 0, 0)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.BackgroundTransparency = 1
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.BorderSizePixel = 0
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Visible = true
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
+
+local FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI = Instance.new("TextLabel")
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.Size = UDim2.new(1, 0, 0, 60)
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.Position = UDim2.new(0, 0, 0.3, -30)
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.BackgroundTransparency = 1
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.Text = "ДОБРО ПОЖАЛОВАТЬ В ULTRA"
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.TextScaled = true
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.Font = Enum.Font.GothamBold
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.TextXAlignment = Enum.TextXAlignment.Center
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.TextYAlignment = Enum.TextYAlignment.Center
+FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.Parent = lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW
+
+local bcdefghijdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQbcdefghijklmnopqrstuvwxmnopqrstuvwxyzABCDEFGHIJKLM = 1
+local stupqrstuvwxyzAvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDEEFGHIJKLMNOPQRSThijklmnopqrs = nil
+
+local NOjklmnopqrstuvwxyklmnopqrstuvwxyzABCDEFGyzABCDEFGHIJKLMNbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ startWelcomeColorCycle()
+    while FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI and FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI.Parent do
+        local TUVijklmnopqrstuvwxyzABCDEFGHIJKLMNklmnopqrstuvwxyzABCDEghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghijklmnopqrstuvwxyzABC = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[bcdefghijdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQbcdefghijklmnopqrstuvwxmnopqrstuvwxyzABCDEFGHIJKLM % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1]
+        stupqrstuvwxyzAvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDEEFGHIJKLMNOPQRSThijklmnopqrs = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(FGHIJKLMNOPQOPQRSTUVmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXqrstuvwxyzABCDEFGHI, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
+            TextColor3 = ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPPQRopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXLMNOmnopqrstuvwxyzABCDEFGHIJNOPQRSTUVW
         })
-        welcomeTween:Play()
-        welcomeTween.Completed:Wait()
-        welcomeColorIndex = welcomeColorIndex % #colors + 1
+        stupqrstuvwxyzAvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDEEFGHIJKLMNOPQRSThijklmnopqrs:Play()
+        stupqrstuvwxyzAvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDEEFGHIJKLMNOPQRSThijklmnopqrs.Completed:Wait()
+        bcdefghijdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQbcdefghijklmnopqrstuvwxmnopqrstuvwxyzABCDEFGHIJKLM = bcdefghijdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQbcdefghijklmnopqrstuvwxmnopqrstuvwxyzABCDEFGHIJKLM % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1
     end
 end
 
 coroutine.wrap(startWelcomeColorCycle)()
 
--- ============================================================
--- ===== FLY (ВНУТРИ MISC) =====
--- ============================================================
-local flyStatus = false
-local flySpeed = 50
-local bodyVelocity = nil
-local bodyGyro = nil
-local flyBindKey = nil
 
-local flyPanel = Instance.new("Frame")
-flyPanel.Size = UDim2.new(0, 180, 0, 55)
-flyPanel.Position = UDim2.new(0, 10, 0, 45)
-flyPanel.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
-flyPanel.BackgroundTransparency = 0.2
-flyPanel.BorderSizePixel = 0
-flyPanel.Visible = false
-flyPanel.Parent = contentContainer
 
-local flyPanelCorner = Instance.new("UICorner")
-flyPanelCorner.CornerRadius = UDim.new(0, 8)
-flyPanelCorner.Parent = flyPanel
 
-local flyTopRow = Instance.new("Frame")
-flyTopRow.Size = UDim2.new(1, 0, 0, 30)
-flyTopRow.Position = UDim2.new(0, 0, 0, 0)
-flyTopRow.BackgroundTransparency = 1
-flyTopRow.Parent = flyPanel
+local qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST = false
+local  = 50
+local rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM = nil
+local bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF = nil
+local ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF = nil
 
-local flyTitle = Instance.new("TextLabel")
-flyTitle.Size = UDim2.new(0, 50, 1, 0)
-flyTitle.Position = UDim2.new(0, 8, 0, 0)
-flyTitle.BackgroundTransparency = 1
-flyTitle.Text = "FLY"
-flyTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-flyTitle.TextScaled = true
-flyTitle.Font = Enum.Font.GothamBold
-flyTitle.TextXAlignment = Enum.TextXAlignment.Left
-flyTitle.Parent = flyTopRow
+local fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM = Instance.new("Frame")
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Size = UDim2.new(0, 180, 0, 55)
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Position = UDim2.new(0, 10, 0, 45)
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.BackgroundTransparency = 0.2
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.BorderSizePixel = 0
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Visible = false
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
-local flyToggleBtn = Instance.new("TextButton")
-flyToggleBtn.Size = UDim2.new(0, 80, 1, -4)
-flyToggleBtn.Position = UDim2.new(0, 75, 0, 2)
-flyToggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-flyToggleBtn.Text = "OFF"
-flyToggleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-flyToggleBtn.TextScaled = true
-flyToggleBtn.Font = Enum.Font.GothamBold
-flyToggleBtn.Parent = flyTopRow
+local jklmnopqrWXzABCDEFG = Instance.new("UICorner")
+jklmnopqrWXzABCDEFG.CornerRadius = UDim.new(0, 8)
+jklmnopqrWXzABCDEFG.Parent = fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM
 
-local flyToggleCorner = Instance.new("UICorner")
-flyToggleCorner.CornerRadius = UDim.new(0, 4)
-flyToggleCorner.Parent = flyToggleBtn
+local fghijklmnopqrghijklmnopqrstuvwxNOPQRST = Instance.new("Frame")
+fghijklmnopqrghijklmnopqrstuvwxNOPQRST.Size = UDim2.new(1, 0, 0, 30)
+fghijklmnopqrghijklmnopqrstuvwxNOPQRST.Position = UDim2.new(0, 0, 0, 0)
+fghijklmnopqrghijklmnopqrstuvwxNOPQRST.BackgroundTransparency = 1
+fghijklmnopqrghijklmnopqrstuvwxNOPQRST.Parent = fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM
 
--- FLY SPEED PANEL
-local flySpeedPanel = Instance.new("Frame")
-flySpeedPanel.Size = UDim2.new(0, 110, 0, 65)
-flySpeedPanel.Position = UDim2.new(0.5, -55, 0, 35)
-flySpeedPanel.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
-flySpeedPanel.BackgroundTransparency = 0.2
-flySpeedPanel.BorderSizePixel = 0
-flySpeedPanel.Visible = false
-flySpeedPanel.ClipsDescendants = true
-flySpeedPanel.Parent = flyPanel
+local cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST = Instance.new("TextLabel")
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Size = UDim2.new(0, 50, 1, 0)
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Position = UDim2.new(0, 8, 0, 0)
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.BackgroundTransparency = 1
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Text = "FLY"
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.TextColor3 = Color3.fromRGB(255, 255, 255)
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.TextScaled = true
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Font = Enum.Font.GothamBold
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.TextXAlignment = Enum.TextXAlignment.Left
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Parent = fghijklmnopqrghijklmnopqrstuvwxNOPQRST
 
-local flySpeedPanelCorner = Instance.new("UICorner")
-flySpeedPanelCorner.CornerRadius = UDim.new(0, 6)
-flySpeedPanelCorner.Parent = flySpeedPanel
+local mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop = Instance.new("TextButton")
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Size = UDim2.new(0, 80, 1, -4)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Position = UDim2.new(0, 75, 0, 2)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Text = "OFF"
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.TextColor3 = Color3.fromRGB(255, 255, 255)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.TextScaled = true
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Font = Enum.Font.GothamBold
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Parent = fghijklmnopqrghijklmnopqrstuvwxNOPQRST
 
-local flySpeedContainer = Instance.new("Frame")
-flySpeedContainer.Size = UDim2.new(1, 0, 1, 0)
-flySpeedContainer.Position = UDim2.new(0, 0, 0, -65)
-flySpeedContainer.BackgroundTransparency = 1
-flySpeedContainer.Parent = flySpeedPanel
+local KLMNOPQRSefghijklmnopqrstuvwxyzABCDEFGHIJKQRSTvwxyzABCDEFGHIJKLMNOPQRSTvwxyzABCDE = Instance.new("UICorner")
+KLMNOPQRSefghijklmnopqrstuvwxyzABCDEFGHIJKQRSTvwxyzABCDEFGHIJKLMNOPQRSTvwxyzABCDE.CornerRadius = UDim.new(0, 4)
+KLMNOPQRSefghijklmnopqrstuvwxyzABCDEFGHIJKQRSTvwxyzABCDEFGHIJKLMNOPQRSTvwxyzABCDE.Parent = mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop
 
-local flySpeedTop = Instance.new("Frame")
-flySpeedTop.Size = UDim2.new(1, 0, 0, 20)
-flySpeedTop.Position = UDim2.new(0, 0, 0, 0)
-flySpeedTop.BackgroundTransparency = 1
-flySpeedTop.Parent = flySpeedContainer
 
-local flySpeedTitle = Instance.new("TextLabel")
-flySpeedTitle.Size = UDim2.new(0, 45, 1, 0)
-flySpeedTitle.Position = UDim2.new(0, 5, 0, 0)
-flySpeedTitle.BackgroundTransparency = 1
-flySpeedTitle.Text = "SPEED"
-flySpeedTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-flySpeedTitle.TextScaled = true
-flySpeedTitle.Font = Enum.Font.GothamBold
-flySpeedTitle.TextXAlignment = Enum.TextXAlignment.Left
-flySpeedTitle.Parent = flySpeedTop
+local vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop = Instance.new("Frame")
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.Size = UDim2.new(0, 110, 0, 65)
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.Position = UDim2.new(0.5, -55, 0, 35)
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.BackgroundTransparency = 0.2
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.BorderSizePixel = 0
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.Visible = false
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.ClipsDescendants = true
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.Parent = fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM
 
-local flySpeedValue = Instance.new("TextLabel")
-flySpeedValue.Size = UDim2.new(0, 35, 1, 0)
-flySpeedValue.Position = UDim2.new(1, -40, 0, 0)
-flySpeedValue.BackgroundTransparency = 1
-flySpeedValue.Text = "50"
-flySpeedValue.TextColor3 = Color3.fromRGB(200, 200, 255)
-flySpeedValue.TextScaled = true
-flySpeedValue.Font = Enum.Font.GothamBold
-flySpeedValue.TextXAlignment = Enum.TextXAlignment.Right
-flySpeedValue.Parent = flySpeedTop
+local stuvwxyzABuvw = Instance.new("UICorner")
+stuvwxyzABuvw.CornerRadius = UDim.new(0, 6)
+stuvwxyzABuvw.Parent = vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop
 
-local flySliderContainer = Instance.new("Frame")
-flySliderContainer.Size = UDim2.new(0, 95, 0, 20)
-flySliderContainer.Position = UDim2.new(0.5, -47.5, 0, 22)
-flySliderContainer.BackgroundTransparency = 1
-flySliderContainer.Parent = flySpeedContainer
+local tuvwOPQ = Instance.new("Frame")
+tuvwOPQ.Size = UDim2.new(1, 0, 1, 0)
+tuvwOPQ.Position = UDim2.new(0, 0, 0, -65)
+tuvwOPQ.BackgroundTransparency = 1
+tuvwOPQ.Parent = vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop
 
-local flySliderHitbox = Instance.new("TextButton")
-flySliderHitbox.Size = UDim2.new(1, 0, 1, 0)
-flySliderHitbox.Position = UDim2.new(0, 0, 0, 0)
-flySliderHitbox.BackgroundTransparency = 1
-flySliderHitbox.Text = ""
-flySliderHitbox.Parent = flySliderContainer
+local BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY = Instance.new("Frame")
+BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.Size = UDim2.new(1, 0, 0, 20)
+BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.Position = UDim2.new(0, 0, 0, 0)
+BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.BackgroundTransparency = 1
+BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.Parent = tuvwOPQ
 
-local flySliderBg = Instance.new("Frame")
-flySliderBg.Size = UDim2.new(1, -10, 0, 3)
-flySliderBg.Position = UDim2.new(0, 5, 0.5, -1.5)
-flySliderBg.BackgroundColor3 = Color3.fromRGB(80, 80, 100)
-flySliderBg.BackgroundTransparency = 0
-flySliderBg.BorderSizePixel = 0
-flySliderBg.Parent = flySliderContainer
+local stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ = Instance.new("TextLabel")
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.Size = UDim2.new(0, 45, 1, 0)
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.Position = UDim2.new(0, 5, 0, 0)
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.BackgroundTransparency = 1
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.Text = "SPEED"
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.TextColor3 = Color3.fromRGB(255, 255, 255)
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.TextScaled = true
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.Font = Enum.Font.GothamBold
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.TextXAlignment = Enum.TextXAlignment.Left
+stuvwxyzABCDEFGHIJKLMNOPstuvwxyzABCDEIJKLMNOPQRSTUVWXYZ.Parent = BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
 
-local flySliderFill = Instance.new("Frame")
-flySliderFill.Size = UDim2.new(0.125, 0, 1, 0)
-flySliderFill.Position = UDim2.new(0, 0, 0, 0)
-flySliderFill.BackgroundColor3 = colors[1]
-flySliderFill.BackgroundTransparency = 0
-flySliderFill.BorderSizePixel = 0
-flySliderFill.Parent = flySliderBg
+local stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU = Instance.new("TextLabel")
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.Size = UDim2.new(0, 35, 1, 0)
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.Position = UDim2.new(1, -40, 0, 0)
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.BackgroundTransparency = 1
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.Text = "50"
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.TextColor3 = Color3.fromRGB(200, 200, 255)
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.TextScaled = true
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.Font = Enum.Font.GothamBold
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.TextXAlignment = Enum.TextXAlignment.Right
+stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.Parent = BCDEFGHIJKLMNOPQRSTghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
 
-local flySliderButton = Instance.new("TextButton")
-flySliderButton.Size = UDim2.new(0, 12, 0, 12)
-flySliderButton.Position = UDim2.new(0.125, -6, 0.5, -6)
-flySliderButton.BackgroundColor3 = Color3.fromRGB(220, 220, 255)
-flySliderButton.BackgroundTransparency = 0
-flySliderButton.Text = ""
-flySliderButton.BorderSizePixel = 0
-flySliderButton.Parent = flySliderContainer
+local OPQRSTUVWhijklmnop = Instance.new("Frame")
+OPQRSTUVWhijklmnop.Size = UDim2.new(0, 95, 0, 20)
+OPQRSTUVWhijklmnop.Position = UDim2.new(0.5, -47.5, 0, 22)
+OPQRSTUVWhijklmnop.BackgroundTransparency = 1
+OPQRSTUVWhijklmnop.Parent = tuvwOPQ
 
-local flySliderButtonCorner = Instance.new("UICorner")
-flySliderButtonCorner.CornerRadius = UDim.new(1, 0)
-flySliderButtonCorner.Parent = flySliderButton
+local bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA = Instance.new("TextButton")
+bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA.Size = UDim2.new(1, 0, 1, 0)
+bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA.Position = UDim2.new(0, 0, 0, 0)
+bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA.BackgroundTransparency = 1
+bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA.Text = ""
+bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA.Parent = OPQRSTUVWhijklmnop
 
-local flyDragging = false
+local fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN = Instance.new("Frame")
+fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN.Size = UDim2.new(1, -10, 0, 3)
+fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN.Position = UDim2.new(0, 5, 0.5, -1.5)
+fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN.BackgroundColor3 = Color3.fromRGB(80, 80, 100)
+fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN.BackgroundTransparency = 0
+fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN.BorderSizePixel = 0
+fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN.Parent = OPQRSTUVWhijklmnop
 
-local function updateFlySlider(newPos)
-    newPos = math.clamp(newPos, 0, 1)
-    flySliderFill.Size = UDim2.new(newPos, 0, 1, 0)
-    flySliderButton.Position = UDim2.new(newPos, -6, 0.5, -6)
-    flySpeed = math.floor(newPos * 399) + 1
-    flySpeedValue.Text = tostring(flySpeed)
+local wxyzABCDEFGuvwxyzABCDEFJKLM = Instance.new("Frame")
+wxyzABCDEFGuvwxyzABCDEFJKLM.Size = UDim2.new(0.125, 0, 1, 0)
+wxyzABCDEFGuvwxyzABCDEFJKLM.Position = UDim2.new(0, 0, 0, 0)
+wxyzABCDEFGuvwxyzABCDEFJKLM.BackgroundColor3 = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[1]
+wxyzABCDEFGuvwxyzABCDEFJKLM.BackgroundTransparency = 0
+wxyzABCDEFGuvwxyzABCDEFJKLM.BorderSizePixel = 0
+wxyzABCDEFGuvwxyzABCDEFJKLM.Parent = fghijklmnopqrstuvnopqrstuvwxyzABCDnowxyzABCDEFGHIJKLMNOPQRSTUbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMFGHIJKLMN
+
+local ghwxyzABCDEFGHIJKLM = Instance.new("TextButton")
+ghwxyzABCDEFGHIJKLM.Size = UDim2.new(0, 12, 0, 12)
+ghwxyzABCDEFGHIJKLM.Position = UDim2.new(0.125, -6, 0.5, -6)
+ghwxyzABCDEFGHIJKLM.BackgroundColor3 = Color3.fromRGB(220, 220, 255)
+ghwxyzABCDEFGHIJKLM.BackgroundTransparency = 0
+ghwxyzABCDEFGHIJKLM.Text = ""
+ghwxyzABCDEFGHIJKLM.BorderSizePixel = 0
+ghwxyzABCDEFGHIJKLM.Parent = OPQRSTUVWhijklmnop
+
+local yzABCDEFGHIJKLMNOPQRSSTUVHIJKLghijklmnopqrstuFGHIJKLMN = Instance.new("UICorner")
+yzABCDEFGHIJKLMNOPQRSSTUVHIJKLghijklmnopqrstuFGHIJKLMN.CornerRadius = UDim.new(1, 0)
+yzABCDEFGHIJKLMNOPQRSSTUVHIJKLghijklmnopqrstuFGHIJKLMN.Parent = ghwxyzABCDEFGHIJKLM
+
+local abcdefghijklmnopqrstuvwxycdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSThijklmnopqrstuvwxyzABCDEFGHIJKLqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUV = false
+
+local rstuvwxyzABCDEFGHIJKLMNOPQRSTUCDEFGHIJKLMNO updateFlySlider(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij)
+    tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij = math.clamp(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij, 0, 1)
+    wxyzABCDEFGuvwxyzABCDEFJKLM.Size = UDim2.new(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij, 0, 1, 0)
+    ghwxyzABCDEFGHIJKLM.Position = UDim2.new(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij, -6, 0.5, -6)
+     = math.floor(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij * 399) + 1
+    stuvwxyzABCDLMNOPQRSTUVWXvwxyzAKLMNOPQRSTU.Text = tostring()
 end
 
-flySliderButton.MouseButton1Down:Connect(function() flyDragging = true end)
-flySliderHitbox.MouseButton1Down:Connect(function() flyDragging = true end)
+ghwxyzABCDEFGHIJKLM.MouseButton1Down:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV() abcdefghijklmnopqrstuvwxycdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSThijklmnopqrstuvwxyzABCDEFGHIJKLqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUV = true end)
+bcdefghijklmnopcdefghijklmnopqrsdefghijklmnopqrstuvwlmnopqrstuvwxyzA.MouseButton1Down:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV() abcdefghijklmnopqrstuvwxycdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSThijklmnopqrstuvwxyzABCDEFGHIJKLqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUV = true end)
 
-userInputService.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then flyDragging = false end
+abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputEnded:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then abcdefghijklmnopqrstuvwxycdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSThijklmnopqrstuvwxyzABCDEFGHIJKLqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUV = false end
 end)
 
-userInputService.InputChanged:Connect(function(input)
-    if flyDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        local containerPos = flySliderContainer.AbsolutePosition.X + 5
-        local containerSize = flySliderContainer.AbsoluteSize.X - 10
-        local mouseX = input.Position.X
-        local newPos = math.clamp((mouseX - containerPos) / containerSize, 0, 1)
-        updateFlySlider(newPos)
+abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputChanged:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input)
+    if abcdefghijklmnopqrstuvwxycdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSThijklmnopqrstuvwxyzABCDEFGHIJKLqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUV and input.UserInputType == Enum.UserInputType.MouseMovement then
+        local tuvwxyzABCDEFGHIJKLMGHIJKLMNmnopopqbcdefghijklmno = OPQRSTUVWhijklmnop.AbsolutePosition.X + 5
+        local XYZBCDEFGHIJKLMNOPQRefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQMNOnopqrhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = OPQRSTUVWhijklmnop.AbsoluteSize.X - 10
+        local hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLBCDEFGHIJKLMNOPQRSTUVWXY = input.Position.X
+        local hiuvwxyzABCDEFGHIJKLMNOPQRSJKLefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST = math.clamp((wxyzABCDEFGHIghijklmno - defghijklmnopqrstuvwxyzAstuvwxyzABCopqrstuvwxyzABXYZrstuvwxyzAB) / FGHIJKefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRScdefghijklmnopqrstuvwxyzABCDEFGHIJKL, 0, 1)
+        updateFlySlider(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij)
     end
 end)
 
-local function showFlySpeed()
-    flySpeedPanel.Visible = true
-    flySpeedContainer.Position = UDim2.new(0, 0, 0, -65)
-    local slideDown = tweens:Create(flySpeedContainer, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+local bcdefghijklmnopqrstmnopqrstuvwxyzABCDEFGHuvwxyzABCDEabcdefghijklmnopqrstuvwxyzABCDHIJKLMNOPQRSTUVWXYZijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ showFlySpeed()
+    vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.Visible = true
+    tuvwOPQ.Position = UDim2.new(0, 0, 0, -65)
+    local ghijklmnowxyzABCDEFGHIJKLMNOPQRSTCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHI = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(tuvwOPQ, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
         Position = UDim2.new(0, 0, 0, 0)
     })
-    slideDown:Play()
-    local pos = (flySpeed - 1) / 399
-    updateFlySlider(pos)
+    opqrstuvwxyzABCDEFGHIJKHIJKIJKLMNOPpqrst:Play()
+    local qrstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijkdefghijklmnopqrstuvwxyzABCDEFG = ( - 1) / 399
+    updateFlySlider(yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN)
 end
 
-local function hideFlySpeed()
-    local slideUp = tweens:Create(flySpeedContainer, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+local yzABCDEFGHIJKLMNOghijklmnopqrstuvwxyzABCDfghijklmnopqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO hideFlySpeed()
+    local STUVWXYZghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(tuvwOPQ, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
         Position = UDim2.new(0, 0, 0, -65)
     })
-    slideUp:Play()
-    slideUp.Completed:Connect(function()
-        flySpeedPanel.Visible = false
+    cdefghijklmnDEFGHIJKLMNOPQRSTUVOPQRS:Play()
+    cdefghijklmnDEFGHIJKLMNOPQRSTUVOPQRS.Completed:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.Visible = false
     end)
 end
 
-flyToggleBtn.MouseEnter:Connect(function()
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.MouseEnter:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     showFlySpeed()
 end)
 
-flySpeedPanel.MouseLeave:Connect(function()
+vwxyzABCDEFGHIJKLMNOPQRSdefxyzABCDEFGHIJKLMNOPQRSTUopqrstuvwxyzABCDEFlmnop.MouseLeave:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     hideFlySpeed()
 end)
 
-function enableFly()
-    local char = player.Character
-    if not char then return end
-    local root = char:FindFirstChild("HumanoidRootPart")
-    if not root then return end
+DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV enableFly()
+    local lmnopqrstubcdxyqrstuvwxyzABCDEFGHIJKLMNOPQijk = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+    if not lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then return end
+    local fghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVpqrstuvwxylmnopqrstefghijklmnopq = lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:FindFirstChild("HumanoidRootPart")
+    if not efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW then return end
 
-    if bodyVelocity then bodyVelocity:Destroy() end
-    if bodyGyro then bodyGyro:Destroy() end
+    if rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM then rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM:Destroy() end
+    if bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF then bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF:Destroy() end
 
-    bodyVelocity = Instance.new("BodyVelocity")
-    bodyVelocity.MaxForce = Vector3.new(1e9, 1e9, 1e9)
-    bodyVelocity.Velocity = Vector3.new(0, 0, 0)
-    bodyVelocity.Parent = root
+    rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM = Instance.new("BodyVelocity")
+    rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+    rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM.Velocity = Vector3.new(0, 0, 0)
+    rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM.Parent = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW
 
-    bodyGyro = Instance.new("BodyGyro")
-    bodyGyro.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
-    bodyGyro.CFrame = root.CFrame
-    bodyGyro.Parent = root
+    bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF = Instance.new("BodyGyro")
+    bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
+    bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF.CFrame = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame
+    bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF.Parent = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW
 
-    flyStatus = true
-    flyToggleBtn.Text = "ON"
-    flyToggleBtn.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+    qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST = true
+    mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Text = "ON"
+    mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 end
 
-function disableFly()
-    if bodyVelocity then bodyVelocity:Destroy() bodyVelocity = nil end
-    if bodyGyro then bodyGyro:Destroy() bodyGyro = nil end
+DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV disableFly()
+    if rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM then rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM:Destroy() rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM = nil end
+    if bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF then bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF:Destroy() bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF = nil end
 
-    flyStatus = false
-    flyToggleBtn.Text = "OFF"
-    flyToggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+    qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST = false
+    mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.Text = "OFF"
+    mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
 end
 
-flyToggleBtn.MouseButton1Click:Connect(function()
-    if flyStatus then
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSklmnopqrstuvwxyzABCDEFGHIJKLMNOcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSnopqrstuvwefghijklmnop.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    if qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST then
         disableFly()
     else
         enableFly()
     end
 end)
 
-local function handleFly()
-    if not flyStatus then return end
+local ghijklmnopqrstuvwxabcdefghijklmnopqrstuvwxyzABCDEFGHIstuvwxyzABCDEFGHIWXYZrstuvwxyzABCDEFGHIJ handleFly()
+    if not qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST then return end
 
-    local char = player.Character
-    if not char then return end
-    local root = char:FindFirstChild("HumanoidRootPart")
-    if not root or not bodyVelocity then return end
+    local pqrstuvwxyzABCDEFGHIJKLMNOPQmnopqrstuvwxyzABCDEJKLMNOPQ = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+    if not lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then return end
+    local JKLMNOPQRSTUVWXxyzABCDEFGHIJlmnopqrstuvwxyzbcdeabcdefghijklmnopqrstuv = lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:FindFirstChild("HumanoidRootPart")
+    if not efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW or not rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM then return end
 
-    local camera = workspace.CurrentCamera
-    if not camera then return end
+    local klmqrpqrstuvwxyzyzABCDEFGklmnopqrstuvwxyzABCDEFGHIJKL = workspace.CurrentCamera
+    if not klmqrpqrstuvwxyzyzABCDEFGklmnopqrstuvwxyzABCDEFGHIJKL then return end
 
-    local forward = camera.CFrame.LookVector
-    local right = camera.CFrame.RightVector
-    local up = camera.CFrame.UpVector
+    local HIJKLMNOPQRSopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVabcd = klmqrpqrstuvwxyzyzABCDEFGklmnopqrstuvwxyzABCDEFGHIJKL.CFrame.LookVector
+    local jklmnopqrstuvwxyzABCN = klmqrpqrstuvwxyzyzABCDEFGklmnopqrstuvwxyzABCDEFGHIJKL.CFrame.RightVector
+    local fghijklmnopqrstuvwxyzABCDEFGHIJDElmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = klmqrpqrstuvwxyzyzABCDEFGklmnopqrstuvwxyzABCDEFGHIJKL.CFrame.UpVector
 
-    local moveDir = Vector3.new(0, 0, 0)
+    local efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = Vector3.new(0, 0, 0)
 
-    if userInputService:IsKeyDown(Enum.KeyCode.W) then moveDir = moveDir + forward end
-    if userInputService:IsKeyDown(Enum.KeyCode.S) then moveDir = moveDir - forward end
-    if userInputService:IsKeyDown(Enum.KeyCode.A) then moveDir = moveDir - right end
-    if userInputService:IsKeyDown(Enum.KeyCode.D) then moveDir = moveDir + right end
-    if userInputService:IsKeyDown(Enum.KeyCode.Space) then moveDir = moveDir + up end
-    if userInputService:IsKeyDown(Enum.KeyCode.LeftShift) then moveDir = moveDir - up end
+    if abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.W) then efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv + HIJKLMNOPQRSopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVabcd end
+    if abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.S) then efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv - HIJKLMNOPQRSopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVabcd end
+    if abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.A) then efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv - jklmnopqrstuvwxyzABCN end
+    if abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.D) then efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv + jklmnopqrstuvwxyzABCN end
+    if abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.Space) then efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv + fghijklmnopqrstuvwxyzABCDEFGHIJDElmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW end
+    if abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.LeftShift) then efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv - fghijklmnopqrstuvwxyzABCDEFGHIJDElmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW end
 
-    if moveDir.Magnitude > 0 then
-        bodyVelocity.Velocity = moveDir.Unit * flySpeed
+    if efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv.Magnitude > 0 then
+        rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM.Velocity = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQRSTUVtuvwxyzABCDEFGHIJKLMNOPQRSTEFGHfghijkpqrstuv.Unit * 
     else
-        bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+        rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM.Velocity = Vector3.new(0, 0, 0)
     end
 
-    local lookDir = Vector3.new(forward.X, 0, forward.Z)
-    if lookDir.Magnitude > 0.1 then
-        root.CFrame = CFrame.lookAt(root.Position, root.Position + lookDir)
+    local JKLMNOPQRSTUVwxyzABCDEFGHIJKLMNOPQRSTUlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTlmnopqrstuvwxyzABCDEFGHI = Vector3.new(HIJKLMNOPQRSopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVabcd.X, 0, HIJKLMNOPQRSopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVabcd.Z)
+    if JKLMNOPQRSTUVwxyzABCDEFGHIJKLMNOPQRSTUlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTlmnopqrstuvwxyzABCDEFGHI.Magnitude > 0.1 then
+        efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame = CFrame.lookAt(efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position, efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position + JKLMNOPQRSTUVwxyzABCDEFGHIJKLMNOPQRSTUlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTlmnopqrstuvwxyzABCDEFGHI)
     end
 
-    if bodyGyro then bodyGyro.CFrame = root.CFrame end
+    if bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF then bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF.CFrame = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame end
 end
 
-runService.Heartbeat:Connect(function()
+tuvwxyzABCDEFGHIJKLMNOPQRSTUjklmnopqrstuvwxyzABCDEFGHIJlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRrstuvwxyzABCDEFGHIJKLMNOPQfghijklmnRSTUwxyz.Heartbeat:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     handleFly()
 end)
 
--- ============================================================
--- ===== SPEED CAR =====
--- ============================================================
-local speedCarActive = false
-local speedCarSpeed = 300
-local speedCarDuration = 0.5
-local speedCarBindKey = nil
-local speedCarDragging = false
 
-local speedCarPanel = Instance.new("Frame")
-speedCarPanel.Size = UDim2.new(0, 180, 0, 55)
-speedCarPanel.Position = UDim2.new(0, 10, 0, 115)
-speedCarPanel.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
-speedCarPanel.BackgroundTransparency = 0.2
-speedCarPanel.BorderSizePixel = 0
-speedCarPanel.Visible = false
-speedCarPanel.Parent = contentContainer
 
-local speedCarPanelCorner = Instance.new("UICorner")
-speedCarPanelCorner.CornerRadius = UDim.new(0, 8)
-speedCarPanelCorner.Parent = speedCarPanel
 
-local speedCarTopRow = Instance.new("Frame")
-speedCarTopRow.Size = UDim2.new(1, 0, 0, 30)
-speedCarTopRow.Position = UDim2.new(0, 0, 0, 0)
-speedCarTopRow.BackgroundTransparency = 1
-speedCarTopRow.Parent = speedCarPanel
+local LMNOPQRSTUyzABCDEFGHIJKLMNOPQRSTUVkjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWijklmnopqrstuvwxyzABCDEFGHIJ = false
+local klmnopq = 300
+local defghijklmnopqrstuvwxyzABCDEFGHIJKLdefghijklmnopqrstuvwxyzcdefghijklmnopqr = 0.5
+local lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA = nil
+local klmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSqrstuvwxyzABCDEFGHIJKLMNOklmnopqrstuvwxyzABCDEFGHIJKL = false
 
-local speedCarTitle = Instance.new("TextLabel")
-speedCarTitle.Size = UDim2.new(0, 90, 1, 0)
-speedCarTitle.Position = UDim2.new(0, 8, 0, 0)
-speedCarTitle.BackgroundTransparency = 1
-speedCarTitle.Text = "SPEED CAR"
-speedCarTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-speedCarTitle.TextScaled = true
-speedCarTitle.Font = Enum.Font.GothamBold
-speedCarTitle.TextXAlignment = Enum.TextXAlignment.Left
-speedCarTitle.Parent = speedCarTopRow
+local lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX = Instance.new("Frame")
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Size = UDim2.new(0, 180, 0, 55)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Position = UDim2.new(0, 10, 0, 115)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.BackgroundTransparency = 0.2
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.BorderSizePixel = 0
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Visible = false
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
-local speedCarToggleBtn = Instance.new("TextButton")
-speedCarToggleBtn.Size = UDim2.new(0, 50, 1, -4)
-speedCarToggleBtn.Position = UDim2.new(0, 105, 0, 2)
-speedCarToggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-speedCarToggleBtn.Text = "▶"
-speedCarToggleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-speedCarToggleBtn.TextScaled = true
-speedCarToggleBtn.Font = Enum.Font.GothamBold
-speedCarToggleBtn.Parent = speedCarTopRow
+local vwxyzABCDEFGHIJKLMNOPQRSTUVWXHICabcdefghijklmnopqrstuvw = Instance.new("UICorner")
+vwxyzABCDEFGHIJKLMNOPQRSTUVWXHICabcdefghijklmnopqrstuvw.CornerRadius = UDim.new(0, 8)
+vwxyzABCDEFGHIJKLMNOPQRSTUVWXHICabcdefghijklmnopqrstuvw.Parent = lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
-local speedCarToggleCorner = Instance.new("UICorner")
-speedCarToggleCorner.CornerRadius = UDim.new(0, 4)
-speedCarToggleCorner.Parent = speedCarToggleBtn
+local hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk = Instance.new("Frame")
+hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk.Size = UDim2.new(1, 0, 0, 30)
+hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk.Position = UDim2.new(0, 0, 0, 0)
+hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk.BackgroundTransparency = 1
+hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk.Parent = lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
--- SPEED CAR SPEED PANEL
-local speedCarSpeedPanel = Instance.new("Frame")
-speedCarSpeedPanel.Size = UDim2.new(0, 110, 0, 65)
-speedCarSpeedPanel.Position = UDim2.new(0.5, -55, 0, 35)
-speedCarSpeedPanel.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
-speedCarSpeedPanel.BackgroundTransparency = 0.2
-speedCarSpeedPanel.BorderSizePixel = 0
-speedCarSpeedPanel.Visible = false
-speedCarSpeedPanel.ClipsDescendants = true
-speedCarSpeedPanel.Parent = speedCarPanel
+local lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST = Instance.new("TextLabel")
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Size = UDim2.new(0, 90, 1, 0)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Position = UDim2.new(0, 8, 0, 0)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.BackgroundTransparency = 1
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Text = "SPEED CAR"
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.TextColor3 = Color3.fromRGB(255, 255, 255)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.TextScaled = true
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Font = Enum.Font.GothamBold
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.TextXAlignment = Enum.TextXAlignment.Left
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST.Parent = hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk
 
-local speedCarSpeedPanelCorner = Instance.new("UICorner")
-speedCarSpeedPanelCorner.CornerRadius = UDim.new(0, 6)
-speedCarSpeedPanelCorner.Parent = speedCarSpeedPanel
+local JKLMNO = Instance.new("TextButton")
+JKLMNO.Size = UDim2.new(0, 50, 1, -4)
+JKLMNO.Position = UDim2.new(0, 105, 0, 2)
+JKLMNO.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+JKLMNO.Text = "▶"
+JKLMNO.TextColor3 = Color3.fromRGB(255, 255, 255)
+JKLMNO.TextScaled = true
+JKLMNO.Font = Enum.Font.GothamBold
+JKLMNO.Parent = hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUJKLMNOPQRSTUVWXYZABCDEFGHImnopqrstuvwxyzABCDEFGHIJKLMNOPQRSk
 
-local speedCarSpeedContainer = Instance.new("Frame")
-speedCarSpeedContainer.Size = UDim2.new(1, 0, 1, 0)
-speedCarSpeedContainer.Position = UDim2.new(0, 0, 0, -65)
-speedCarSpeedContainer.BackgroundTransparency = 1
-speedCarSpeedContainer.Parent = speedCarSpeedPanel
+local xyzABCDEFGHIJKLMNOPQRSabcdefghijklmnopqrstuvw = Instance.new("UICorner")
+xyzABCDEFGHIJKLMNOPQRSabcdefghijklmnopqrstuvw.CornerRadius = UDim.new(0, 4)
+xyzABCDEFGHIJKLMNOPQRSabcdefghijklmnopqrstuvw.Parent = JKLMNO
 
-local speedCarSpeedTop = Instance.new("Frame")
-speedCarSpeedTop.Size = UDim2.new(1, 0, 0, 20)
-speedCarSpeedTop.Position = UDim2.new(0, 0, 0, 0)
-speedCarSpeedTop.BackgroundTransparency = 1
-speedCarSpeedTop.Parent = speedCarSpeedContainer
 
-local speedCarSpeedTitle = Instance.new("TextLabel")
-speedCarSpeedTitle.Size = UDim2.new(0, 45, 1, 0)
-speedCarSpeedTitle.Position = UDim2.new(0, 5, 0, 0)
-speedCarSpeedTitle.BackgroundTransparency = 1
-speedCarSpeedTitle.Text = "SPEED"
-speedCarSpeedTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-speedCarSpeedTitle.TextScaled = true
-speedCarSpeedTitle.Font = Enum.Font.GothamBold
-speedCarSpeedTitle.TextXAlignment = Enum.TextXAlignment.Left
-speedCarSpeedTitle.Parent = speedCarSpeedTop
+local JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm = Instance.new("Frame")
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.Size = UDim2.new(0, 110, 0, 65)
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.Position = UDim2.new(0.5, -55, 0, 35)
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.BackgroundTransparency = 0.2
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.BorderSizePixel = 0
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.Visible = false
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.ClipsDescendants = true
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.Parent = lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
-local speedCarSpeedValue = Instance.new("TextLabel")
-speedCarSpeedValue.Size = UDim2.new(0, 35, 1, 0)
-speedCarSpeedValue.Position = UDim2.new(1, -40, 0, 0)
-speedCarSpeedValue.BackgroundTransparency = 1
-speedCarSpeedValue.Text = "300"
-speedCarSpeedValue.TextColor3 = Color3.fromRGB(200, 200, 255)
-speedCarSpeedValue.TextScaled = true
-speedCarSpeedValue.Font = Enum.Font.GothamBold
-speedCarSpeedValue.TextXAlignment = Enum.TextXAlignment.Right
-speedCarSpeedValue.Parent = speedCarSpeedTop
+local GHIJKLMNOPijklmnopqrstuvwxyzABCDEFcdefghijklmnopqrstuvwxyzABCDECDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQR = Instance.new("UICorner")
+GHIJKLMNOPijklmnopqrstuvwxyzABCDEFcdefghijklmnopqrstuvwxyzABCDECDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQR.CornerRadius = UDim.new(0, 6)
+GHIJKLMNOPijklmnopqrstuvwxyzABCDEFcdefghijklmnopqrstuvwxyzABCDECDEFGHIJKLMNOPQRSTUVWXYZIJKLMNOPQR.Parent = JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm
 
-local speedCarSliderContainer = Instance.new("Frame")
-speedCarSliderContainer.Size = UDim2.new(0, 95, 0, 20)
-speedCarSliderContainer.Position = UDim2.new(0.5, -47.5, 0, 22)
-speedCarSliderContainer.BackgroundTransparency = 1
-speedCarSliderContainer.Parent = speedCarSpeedContainer
+local rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr = Instance.new("Frame")
+rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr.Size = UDim2.new(1, 0, 1, 0)
+rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr.Position = UDim2.new(0, 0, 0, -65)
+rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr.BackgroundTransparency = 1
+rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr.Parent = JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm
 
-local speedCarSliderHitbox = Instance.new("TextButton")
-speedCarSliderHitbox.Size = UDim2.new(1, 0, 1, 0)
-speedCarSliderHitbox.Position = UDim2.new(0, 0, 0, 0)
-speedCarSliderHitbox.BackgroundTransparency = 1
-speedCarSliderHitbox.Text = ""
-speedCarSliderHitbox.Parent = speedCarSliderContainer
+local nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu = Instance.new("Frame")
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu.Size = UDim2.new(1, 0, 0, 20)
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu.Position = UDim2.new(0, 0, 0, 0)
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu.BackgroundTransparency = 1
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu.Parent = rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr
 
-local speedCarSliderBg = Instance.new("Frame")
-speedCarSliderBg.Size = UDim2.new(1, -10, 0, 3)
-speedCarSliderBg.Position = UDim2.new(0, 5, 0.5, -1.5)
-speedCarSliderBg.BackgroundColor3 = Color3.fromRGB(80, 80, 100)
-speedCarSliderBg.BackgroundTransparency = 0
-speedCarSliderBg.BorderSizePixel = 0
-speedCarSliderBg.Parent = speedCarSliderContainer
+local lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = Instance.new("TextLabel")
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.Size = UDim2.new(0, 45, 1, 0)
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position = UDim2.new(0, 5, 0, 0)
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.BackgroundTransparency = 1
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.Text = "SPEED"
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.TextColor3 = Color3.fromRGB(255, 255, 255)
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.TextScaled = true
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.Font = Enum.Font.GothamBold
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.TextXAlignment = Enum.TextXAlignment.Left
+lmnopqrstuvwxyzABCDEFGHIJKLMtuvwxSTABCDEFGHIJKLMNOPQRSTUVHIJKLMNOPQRijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW.Parent = nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu
 
-local speedCarSliderFill = Instance.new("Frame")
-speedCarSliderFill.Size = UDim2.new(0.75, 0, 1, 0)
-speedCarSliderFill.Position = UDim2.new(0, 0, 0, 0)
-speedCarSliderFill.BackgroundColor3 = colors[1]
-speedCarSliderFill.BackgroundTransparency = 0
-speedCarSliderFill.BorderSizePixel = 0
-speedCarSliderFill.Parent = speedCarSliderBg
+local mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS = Instance.new("TextLabel")
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.Size = UDim2.new(0, 35, 1, 0)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.Position = UDim2.new(1, -40, 0, 0)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.BackgroundTransparency = 1
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.Text = "300"
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.TextColor3 = Color3.fromRGB(200, 200, 255)
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.TextScaled = true
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.Font = Enum.Font.GothamBold
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.TextXAlignment = Enum.TextXAlignment.Right
+mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.Parent = nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUefghijklmnnopqrstu
 
-local speedCarSliderButton = Instance.new("TextButton")
-speedCarSliderButton.Size = UDim2.new(0, 12, 0, 12)
-speedCarSliderButton.Position = UDim2.new(0.75, -6, 0.5, -6)
-speedCarSliderButton.BackgroundColor3 = Color3.fromRGB(220, 220, 255)
-speedCarSliderButton.BackgroundTransparency = 0
-speedCarSliderButton.Text = ""
-speedCarSliderButton.BorderSizePixel = 0
-speedCarSliderButton.Parent = speedCarSliderContainer
+local qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ = Instance.new("Frame")
+qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ.Size = UDim2.new(0, 95, 0, 20)
+qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ.Position = UDim2.new(0.5, -47.5, 0, 22)
+qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ.BackgroundTransparency = 1
+qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ.Parent = rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr
 
-local speedCarSliderButtonCorner = Instance.new("UICorner")
-speedCarSliderButtonCorner.CornerRadius = UDim.new(1, 0)
-speedCarSliderButtonCorner.Parent = speedCarSliderButton
+local OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = Instance.new("TextButton")
+OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.Size = UDim2.new(1, 0, 1, 0)
+OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.Position = UDim2.new(0, 0, 0, 0)
+OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.BackgroundTransparency = 1
+OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.Text = ""
+OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.Parent = qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ
 
-function activateSpeedCar()
-    if speedCarActive then return end
-    local char = player.Character
-    if not char then return end
-    local root = char:FindFirstChild("HumanoidRootPart")
-    if not root then return end
+local ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ = Instance.new("Frame")
+ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ.Size = UDim2.new(1, -10, 0, 3)
+ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ.Position = UDim2.new(0, 5, 0.5, -1.5)
+ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ.BackgroundColor3 = Color3.fromRGB(80, 80, 100)
+ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ.BackgroundTransparency = 0
+ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ.BorderSizePixel = 0
+ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ.Parent = qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ
+
+local NOPQRShijklmnopqrstuvwxy = Instance.new("Frame")
+NOPQRShijklmnopqrstuvwxy.Size = UDim2.new(0.75, 0, 1, 0)
+NOPQRShijklmnopqrstuvwxy.Position = UDim2.new(0, 0, 0, 0)
+NOPQRShijklmnopqrstuvwxy.BackgroundColor3 = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[1]
+NOPQRShijklmnopqrstuvwxy.BackgroundTransparency = 0
+NOPQRShijklmnopqrstuvwxy.BorderSizePixel = 0
+NOPQRShijklmnopqrstuvwxy.Parent = ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOijklmnopqrstuvwxyzABCDEFGHIJKLMstuvwxyzABCDEFGHIJ
+
+local klmnopqrstuvwxyzAB = Instance.new("TextButton")
+klmnopqrstuvwxyzAB.Size = UDim2.new(0, 12, 0, 12)
+klmnopqrstuvwxyzAB.Position = UDim2.new(0.75, -6, 0.5, -6)
+klmnopqrstuvwxyzAB.BackgroundColor3 = Color3.fromRGB(220, 220, 255)
+klmnopqrstuvwxyzAB.BackgroundTransparency = 0
+klmnopqrstuvwxyzAB.Text = ""
+klmnopqrstuvwxyzAB.BorderSizePixel = 0
+klmnopqrstuvwxyzAB.Parent = qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ
+
+local xyzABCDEFGHIJKLMNOPQRSTUVFGHzABCDEFGHIJKLMNO = Instance.new("UICorner")
+xyzABCDEFGHIJKLMNOPQRSTUVFGHzABCDEFGHIJKLMNO.CornerRadius = UDim.new(1, 0)
+xyzABCDEFGHIJKLMNOPQRSTUVFGHzABCDEFGHIJKLMNO.Parent = klmnopqrstuvwxyzAB
+
+DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV activateSpeedCar()
+    if LMNOPQRSTUyzABCDEFGHIJKLMNOPQRSTUVkjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWijklmnopqrstuvwxyzABCDEFGHIJ then return end
+    local STUbcdefghijklmnopqrstuvwxyzABCijklmnopqrijklmnopqrstuvwxyzABCDEFGHIJK = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+    if not lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then return end
+    local bcdefghijklmnopqrstuvwpqrstuvwxbcdefghijklmnoppqrstuvwxyzABCDEFGHdefghijklmnopqrst = lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:FindFirstChild("HumanoidRootPart")
+    if not efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW then return end
     
-    speedCarActive = true
+    LMNOPQRSTUyzABCDEFGHIJKLMNOPQRSTUVkjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWijklmnopqrstuvwxyzABCDEFGHIJ = true
     
-    local bv = Instance.new("BodyVelocity")
-    bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+    local GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP = Instance.new("BodyVelocity")
+    GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP.MaxForce = Vector3.new(1e9, 1e9, 1e9)
     
-    local direction = root.CFrame.LookVector
-    direction = Vector3.new(direction.X, 0, direction.Z).Unit
+    local CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame.LookVector
+    CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG = Vector3.new(CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG.X, 0, CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG.Z).Unit
     
-    if direction.Magnitude < 0.1 then
-        direction = Vector3.new(1, 0, 0)
+    if CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG.Magnitude < 0.1 then
+        CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG = Vector3.new(1, 0, 0)
     end
     
-    bv.Velocity = direction * speedCarSpeed
-    bv.Parent = root
+    GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP.Velocity = CDEFGHIJKLuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzABCDEFGHIJklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRbcdefghijklmnopqzABCDEFGHIJKLMNOPQRSTUVWXYZxyzABCDEFG * klmnopq
+    GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP.Parent = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW
     
-    task.wait(speedCarDuration)
+    task.wait(defghijklmnopqrstuvwxyzABCDEFGHIJKLdefghijklmnopqrstuvwxyzcdefghijklmnopqr)
     
-    if bv and bv.Parent then
-        bv:Destroy()
+    if GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP and GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP.Parent then
+        GHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABCDExyzABCDrstuvwxyzABCDEFGHIJKLMNOP:Destroy()
     end
     
-    speedCarActive = false
+    LMNOPQRSTUyzABCDEFGHIJKLMNOPQRSTUVkjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWijklmnopqrstuvwxyzABCDEFGHIJ = false
 end
 
-local function updateSpeedCarSlider(newPos)
-    newPos = math.clamp(newPos, 0, 1)
-    speedCarSliderFill.Size = UDim2.new(newPos, 0, 1, 0)
-    speedCarSliderButton.Position = UDim2.new(newPos, -6, 0.5, -6)
-    speedCarSpeed = math.floor(newPos * 399) + 1
-    speedCarSpeedValue.Text = tostring(speedCarSpeed)
+local cdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNijklmnopqrstuvwxyzABCDEFGHIJKopqrstuvwxyzABCDEFG updateSpeedCarSlider(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij)
+    tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij = math.clamp(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij, 0, 1)
+    NOPQRShijklmnopqrstuvwxy.Size = UDim2.new(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij, 0, 1, 0)
+    klmnopqrstuvwxyzAB.Position = UDim2.new(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij, -6, 0.5, -6)
+    klmnopq = math.floor(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij * 399) + 1
+    mnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRS.Text = tostring(klmnopq)
 end
 
-speedCarSliderButton.MouseButton1Down:Connect(function() speedCarDragging = true end)
-speedCarSliderHitbox.MouseButton1Down:Connect(function() speedCarDragging = true end)
+klmnopqrstuvwxyzAB.MouseButton1Down:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV() klmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSqrstuvwxyzABCDEFGHIJKLMNOklmnopqrstuvwxyzABCDEFGHIJKL = true end)
+OPQRSTUVWXYZpqrstuvwxyzABCDEFGHIJKLMNOPQRqrstuvbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.MouseButton1Down:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV() klmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSqrstuvwxyzABCDEFGHIJKLMNOklmnopqrstuvwxyzABCDEFGHIJKL = true end)
 
-userInputService.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then speedCarDragging = false end
+abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputEnded:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then klmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSqrstuvwxyzABCDEFGHIJKLMNOklmnopqrstuvwxyzABCDEFGHIJKL = false end
 end)
 
-userInputService.InputChanged:Connect(function(input)
-    if speedCarDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        local containerPos = speedCarSliderContainer.AbsolutePosition.X + 5
-        local containerSize = speedCarSliderContainer.AbsoluteSize.X - 10
-        local mouseX = input.Position.X
-        local newPos = math.clamp((mouseX - containerPos) / containerSize, 0, 1)
-        updateSpeedCarSlider(newPos)
+abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputChanged:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input)
+    if klmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSqrstuvwxyzABCDEFGHIJKLMNOklmnopqrstuvwxyzABCDEFGHIJKL and input.UserInputType == Enum.UserInputType.MouseMovement then
+        local defghijklmnopqrstuvwxyzAstuvwxyzABCopqrstuvwxyzABXYZrstuvwxyzAB = qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ.AbsolutePosition.X + 5
+        local FGHIJKefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRScdefghijklmnopqrstuvwxyzABCDEFGHIJKL = qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZzABbcdefghijklmnopqrstuvwpqrstuvwxyzABCDEFGHIJ.AbsoluteSize.X - 10
+        local wxyzABCDEFGHIghijklmno = input.Position.X
+        local tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij = math.clamp((wxyzABCDEFGHIghijklmno - defghijklmnopqrstuvwxyzAstuvwxyzABCopqrstuvwxyzABXYZrstuvwxyzAB) / FGHIJKefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRScdefghijklmnopqrstuvwxyzABCDEFGHIJKL, 0, 1)
+        updateSpeedCarSlider(tuvwxyzABCDEFGHIJKLMNOPQRSTUVWbcdefghiopefghij)
     end
 end)
 
-local function showSpeedCarSpeed()
-    speedCarSpeedPanel.Visible = true
-    speedCarSpeedContainer.Position = UDim2.new(0, 0, 0, -65)
-    local slideDown = tweens:Create(speedCarSpeedContainer, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+local tuvwxyzABCDEFGHIJKLMNOPQRSTUVABCDEFGHIJKLwxyzABCDEFGHIJKLMNrstuvwxghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ showSpeedCarSpeed()
+    JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.Visible = true
+    rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr.Position = UDim2.new(0, 0, 0, -65)
+    local opqrstuvwxyzABCDEFGHIJKHIJKIJKLMNOPpqrst = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
         Position = UDim2.new(0, 0, 0, 0)
     })
-    slideDown:Play()
-    local pos = (speedCarSpeed - 1) / 399
-    updateSpeedCarSlider(pos)
+    opqrstuvwxyzABCDEFGHIJKHIJKIJKLMNOPpqrst:Play()
+    local yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN = (klmnopq - 1) / 399
+    updateSpeedCarSlider(yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN)
 end
 
-local function hideSpeedCarSpeed()
-    local slideUp = tweens:Create(speedCarSpeedContainer, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+local vwxyqrstuvwxyzABCDEFGHIJKLMNbcdefghijklmnopqabcdefghijklmnopqrsfghijklm hideSpeedCarSpeed()
+    local cdefghijklmnDEFGHIJKLMNOPQRSTUVOPQRS = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(rstuvwxyzlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTEFGHIJKLMNOPQRSTUVmnopqr, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
         Position = UDim2.new(0, 0, 0, -65)
     })
-    slideUp:Play()
-    slideUp.Completed:Connect(function()
-        speedCarSpeedPanel.Visible = false
+    cdefghijklmnDEFGHIJKLMNOPQRSTUVOPQRS:Play()
+    cdefghijklmnDEFGHIJKLMNOPQRSTUVOPQRS.Completed:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.Visible = false
     end)
 end
 
-speedCarToggleBtn.MouseEnter:Connect(function()
+JKLMNO.MouseEnter:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     showSpeedCarSpeed()
 end)
 
-speedCarSpeedPanel.MouseLeave:Connect(function()
+JKLMNOPcdefghijklmnopqrstuvwxyzABCDpqrstuvwxyzABCDEFGHIJKuvwxyzABCDEFGxyzABlm.MouseLeave:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     hideSpeedCarSpeed()
 end)
 
-speedCarToggleBtn.MouseButton1Click:Connect(function()
+JKLMNO.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     activateSpeedCar()
 end)
 
--- ============================================================
--- ===== NOCLIP =====
--- ============================================================
-local noclipActive = false
-local noclipConn = nil
-local noclipBindKey = nil
 
-local noclipPanel = Instance.new("Frame")
-noclipPanel.Size = UDim2.new(0, 200, 0, 55)
-noclipPanel.Position = UDim2.new(0, 10, 0, 195)
-noclipPanel.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
-noclipPanel.BackgroundTransparency = 0.2
-noclipPanel.BorderSizePixel = 0
-noclipPanel.Visible = false
-noclipPanel.Parent = contentContainer
 
-local noclipPanelCorner = Instance.new("UICorner")
-noclipPanelCorner.CornerRadius = UDim.new(0, 8)
-noclipPanelCorner.Parent = noclipPanel
 
-local noclipTitle = Instance.new("TextLabel")
-noclipTitle.Size = UDim2.new(0, 70, 1, 0)
-noclipTitle.Position = UDim2.new(0, 8, 0, 0)
-noclipTitle.BackgroundTransparency = 1
-noclipTitle.Text = "NOCLIP"
-noclipTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-noclipTitle.TextScaled = true
-noclipTitle.Font = Enum.Font.GothamBold
-noclipTitle.TextXAlignment = Enum.TextXAlignment.Left
-noclipTitle.Parent = noclipPanel
+local ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcdefghiDEFGHIJKLMNOabcdefghijklmabc = false
+local abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW = nil
+local HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn = nil
 
-local noclipToggleBtn = Instance.new("TextButton")
-noclipToggleBtn.Size = UDim2.new(0, 80, 1, -6)
-noclipToggleBtn.Position = UDim2.new(0, 85, 0, 3)
-noclipToggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-noclipToggleBtn.Text = "ВКЛ"
-noclipToggleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-noclipToggleBtn.TextScaled = true
-noclipToggleBtn.Font = Enum.Font.GothamBold
-noclipToggleBtn.Parent = noclipPanel
+local abcdefghijklmnopqnopqrstuvwxyzABCDEFGH = Instance.new("Frame")
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Size = UDim2.new(0, 200, 0, 55)
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Position = UDim2.new(0, 10, 0, 195)
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.BackgroundColor3 = Color3.fromRGB(30, 30, 45)
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.BackgroundTransparency = 0.2
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.BorderSizePixel = 0
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Visible = false
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
-local noclipToggleCorner = Instance.new("UICorner")
-noclipToggleCorner.CornerRadius = UDim.new(0, 4)
-noclipToggleCorner.Parent = noclipToggleBtn
+local pqrstuvwxyzABCDEFGHIJKqrstuklmnopqrstuvwxyzARSTabcdefghijklmnopqIJKLMNOP = Instance.new("UICorner")
+pqrstuvwxyzABCDEFGHIJKqrstuklmnopqrstuvwxyzARSTabcdefghijklmnopqIJKLMNOP.CornerRadius = UDim.new(0, 8)
+pqrstuvwxyzABCDEFGHIJKqrstuklmnopqrstuvwxyzARSTabcdefghijklmnopqIJKLMNOP.Parent = abcdefghijklmnopqnopqrstuvwxyzABCDEFGH
 
-function toggleNoclip()
-    noclipActive = not noclipActive
-    if noclipActive then
-        noclipToggleBtn.Text = "ВЫКЛ"
-        noclipToggleBtn.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
-        noclipConn = runService.Heartbeat:Connect(function()
-            local char = player.Character
-            if char then
-                for _, v in pairs(char:GetDescendants()) do
+local NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR = Instance.new("TextLabel")
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.Size = UDim2.new(0, 70, 1, 0)
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.Position = UDim2.new(0, 8, 0, 0)
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.BackgroundTransparency = 1
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.Text = "NOCLIP"
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.TextColor3 = Color3.fromRGB(255, 255, 255)
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.TextScaled = true
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.Font = Enum.Font.GothamBold
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.TextXAlignment = Enum.TextXAlignment.Left
+NOIJKLMNOPdefghijklmnopqrstuvwxyzABCdefghijklmnopqrstuvwxyzABxyzABCDEFGHIJKLMNOPQR.Parent = abcdefghijklmnopqnopqrstuvwxyzABCDEFGH
+
+local klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno = Instance.new("TextButton")
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Size = UDim2.new(0, 80, 1, -6)
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Position = UDim2.new(0, 85, 0, 3)
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Text = "ВКЛ"
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.TextColor3 = Color3.fromRGB(255, 255, 255)
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.TextScaled = true
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Font = Enum.Font.GothamBold
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Parent = abcdefghijklmnopqnopqrstuvwxyzABCDEFGH
+
+local klmnopqrstuvwxyzABCDEFGHIJKLMNOPfghijklmnopqrstuvwxyzABCDEFxyzABC = Instance.new("UICorner")
+klmnopqrstuvwxyzABCDEFGHIJKLMNOPfghijklmnopqrstuvwxyzABCDEFxyzABC.CornerRadius = UDim.new(0, 4)
+klmnopqrstuvwxyzABCDEFGHIJKLMNOPfghijklmnopqrstuvwxyzABCDEFxyzABC.Parent = klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno
+
+DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV toggleNoclip()
+    ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcdefghiDEFGHIJKLMNOabcdefghijklmabc = not ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcdefghiDEFGHIJKLMNOabcdefghijklmabc
+    if ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcdefghiDEFGHIJKLMNOabcdefghijklmabc then
+        klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Text = "ВЫКЛ"
+        klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+        abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW = tuvwxyzABCDEFGHIJKLMNOPQRSTUjklmnopqrstuvwxyzABCDEFGHIJlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRrstuvwxyzABCDEFGHIJKLMNOPQfghijklmnRSTUwxyz.Heartbeat:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+            local wxyzABCDEFGHIJKLMNOPQRSefghijklmnopqrstuv = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+            if lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then
+                for _, v in pairs(lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:GetDescendants()) do
                     if v:IsA("BasePart") then
                         v.CanCollide = false
                     end
@@ -789,15 +789,15 @@ function toggleNoclip()
             end
         end)
     else
-        noclipToggleBtn.Text = "ВКЛ"
-        noclipToggleBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-        if noclipConn then
-            noclipConn:Disconnect()
-            noclipConn = nil
+        klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.Text = "ВКЛ"
+        klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+        if abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW then
+            abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW:Disconnect()
+            abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW = nil
         end
-        local char = player.Character
-        if char then
-            for _, v in pairs(char:GetDescendants()) do
+        local ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+        if lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then
+            for _, v in pairs(lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:GetDescendants()) do
                 if v:IsA("BasePart") then
                     v.CanCollide = true
                 end
@@ -806,53 +806,53 @@ function toggleNoclip()
     end
 end
 
-noclipToggleBtn.MouseButton1Click:Connect(toggleNoclip)
+klmnopqrstuvwxyzABCDEFGHwxyzABCDEFGHIJlmno.MouseButton1Click:Connect(toggleNoclip)
 
--- ============================================================
--- ===== MISC PANEL (ВКЛАДКА) =====
--- ============================================================
-local miscPanel = Instance.new("Frame")
-miscPanel.Size = UDim2.new(1, 0, 1, 0)
-miscPanel.Position = UDim2.new(0, 0, 0, 0)
-miscPanel.BackgroundTransparency = 1
-miscPanel.BorderSizePixel = 0
-miscPanel.Visible = false
-miscPanel.Parent = contentContainer
 
-local miscTitle2 = Instance.new("TextLabel")
-miscTitle2.Size = UDim2.new(1, 0, 0, 25)
-miscTitle2.Position = UDim2.new(0, 0, 0, 10)
-miscTitle2.BackgroundTransparency = 1
-miscTitle2.Text = "MISC"
-miscTitle2.TextColor3 = Color3.fromRGB(255, 255, 255)
-miscTitle2.TextScaled = true
-miscTitle2.Font = Enum.Font.GothamBold
-miscTitle2.TextXAlignment = Enum.TextXAlignment.Left
-miscTitle2.Parent = miscPanel
 
-flyPanel.Parent = miscPanel
-flyPanel.Position = UDim2.new(0, 10, 0, 45)
-flyPanel.Visible = true
 
-speedCarPanel.Parent = miscPanel
-speedCarPanel.Position = UDim2.new(0, 10, 0, 120)
-speedCarPanel.Visible = true
+local abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR = Instance.new("Frame")
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Size = UDim2.new(1, 0, 1, 0)
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Position = UDim2.new(0, 0, 0, 0)
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.BackgroundTransparency = 1
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.BorderSizePixel = 0
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible = false
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
-noclipPanel.Parent = miscPanel
-noclipPanel.Position = UDim2.new(0, 10, 0, 195)
-noclipPanel.Visible = true
+local HMNOPQzABCDEFGHIJKLMNOPQR = Instance.new("TextLabel")
+HMNOPQzABCDEFGHIJKLMNOPQR.Size = UDim2.new(1, 0, 0, 25)
+HMNOPQzABCDEFGHIJKLMNOPQR.Position = UDim2.new(0, 0, 0, 10)
+HMNOPQzABCDEFGHIJKLMNOPQR.BackgroundTransparency = 1
+HMNOPQzABCDEFGHIJKLMNOPQR.Text = "MISC"
+HMNOPQzABCDEFGHIJKLMNOPQR.TextColor3 = Color3.fromRGB(255, 255, 255)
+HMNOPQzABCDEFGHIJKLMNOPQR.TextScaled = true
+HMNOPQzABCDEFGHIJKLMNOPQR.Font = Enum.Font.GothamBold
+HMNOPQzABCDEFGHIJKLMNOPQR.TextXAlignment = Enum.TextXAlignment.Left
+HMNOPQzABCDEFGHIJKLMNOPQR.Parent = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR
 
--- ============================================================
--- ===== MON FARM (ВКЛАДКА FARM С ИНСТРУКЦИЕЙ) =====
--- ============================================================
-local monFarmRunning = false
-local monFarmBv = nil
-local monFarmBg = nil
-local monFarmSpeed = 350
-local monFarmFlyActive = false
-local monFarmStopRequested = false
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Parent = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Position = UDim2.new(0, 10, 0, 45)
+fghijklmnijklmnopqrstuvwxyzABCDEFGEFGHIJKEFGHIJKLM.Visible = true
 
-local monFarmConfig = {
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Parent = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Position = UDim2.new(0, 10, 0, 120)
+lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWklmnopqrstuvwxyzABCDEFGHIJKLpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX.Visible = true
+
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Parent = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Position = UDim2.new(0, 10, 0, 195)
+abcdefghijklmnopqnopqrstuvwxyzABCDEFGH.Visible = true
+
+
+
+
+local lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy = false
+local pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy = nil
+local ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm = nil
+local ZcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOABCDEFGHIJKLMNOPQRSTUVWXYMNOPQRSTUvwxefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP = 350
+local rstuvwxyzABCCDEFGHIJKLMNOPQRSTUVWXhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = false
+local HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk = false
+
+local vw = {
     buyPos = Vector3.new(6804.3, 20.6, 22.7),
     point1 = Vector3.new(6856.6, 17.7, 111.9),
     point2 = Vector3.new(-96.2, 17.7, 111.2),
@@ -861,465 +861,465 @@ local monFarmConfig = {
     sellPos = Vector3.new(6808.8, 17.2, -34.4),
 }
 
-local farmPanel = Instance.new("Frame")
-farmPanel.Size = UDim2.new(1, 0, 1, 0)
-farmPanel.Position = UDim2.new(0, 0, 0, 0)
-farmPanel.BackgroundTransparency = 1
-farmPanel.BorderSizePixel = 0
-farmPanel.Visible = false
-farmPanel.Parent = contentContainer
+local tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU = Instance.new("Frame")
+tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Size = UDim2.new(1, 0, 1, 0)
+tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Position = UDim2.new(0, 0, 0, 0)
+tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.BackgroundTransparency = 1
+tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.BorderSizePixel = 0
+tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible = false
+tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
--- ===== ЛЕВАЯ ЧАСТЬ (УПРАВЛЕНИЕ) =====
-local leftSide = Instance.new("Frame")
-leftSide.Size = UDim2.new(0, 350, 1, 0)
-leftSide.Position = UDim2.new(0, 0, 0, 0)
-leftSide.BackgroundTransparency = 1
-leftSide.Parent = farmPanel
 
-local farmTitle2 = Instance.new("TextLabel")
-farmTitle2.Size = UDim2.new(1, 0, 0, 25)
-farmTitle2.Position = UDim2.new(0, 0, 0, 10)
-farmTitle2.BackgroundTransparency = 1
-farmTitle2.Text = "MON FARM"
-farmTitle2.TextColor3 = Color3.fromRGB(255, 215, 0)
-farmTitle2.TextScaled = true
-farmTitle2.Font = Enum.Font.GothamBold
-farmTitle2.TextXAlignment = Enum.TextXAlignment.Left
-farmTitle2.Parent = leftSide
+local wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM = Instance.new("Frame")
+wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM.Size = UDim2.new(0, 350, 1, 0)
+wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM.Position = UDim2.new(0, 0, 0, 0)
+wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM.BackgroundTransparency = 1
+wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM.Parent = tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU
 
-local farmStatusLabel2 = Instance.new("TextLabel")
-farmStatusLabel2.Size = UDim2.new(1, 0, 0, 20)
-farmStatusLabel2.Position = UDim2.new(0, 0, 0, 40)
-farmStatusLabel2.BackgroundTransparency = 1
-farmStatusLabel2.Text = "Статус: Остановлен"
-farmStatusLabel2.TextColor3 = Color3.fromRGB(200, 200, 200)
-farmStatusLabel2.TextScaled = true
-farmStatusLabel2.Font = Enum.Font.GothamMedium
-farmStatusLabel2.TextXAlignment = Enum.TextXAlignment.Left
-farmStatusLabel2.Parent = leftSide
+local uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU = Instance.new("TextLabel")
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.Size = UDim2.new(1, 0, 0, 25)
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.Position = UDim2.new(0, 0, 0, 10)
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.BackgroundTransparency = 1
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.Text = "MON FARM"
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.TextColor3 = Color3.fromRGB(255, 215, 0)
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.TextScaled = true
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.Font = Enum.Font.GothamBold
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.TextXAlignment = Enum.TextXAlignment.Left
+uvwxyzABCDEFGHIJKLMNOPQRSTUVzAnopqrstuvwxyzABjkijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU.Parent = wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM
 
-local farmToggleBtn2 = Instance.new("TextButton")
-farmToggleBtn2.Size = UDim2.new(0, 140, 0, 35)
-farmToggleBtn2.Position = UDim2.new(0, 40, 0, 65)
-farmToggleBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-farmToggleBtn2.Text = "СТАРТ"
-farmToggleBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
-farmToggleBtn2.TextScaled = true
-farmToggleBtn2.Font = Enum.Font.GothamBold
-farmToggleBtn2.Parent = leftSide
+local nopqrstuvwxyzABCDEFGHI = Instance.new("TextLabel")
+nopqrstuvwxyzABCDEFGHI.Size = UDim2.new(1, 0, 0, 20)
+nopqrstuvwxyzABCDEFGHI.Position = UDim2.new(0, 0, 0, 40)
+nopqrstuvwxyzABCDEFGHI.BackgroundTransparency = 1
+nopqrstuvwxyzABCDEFGHI.Text = "Статус: Остановлен"
+nopqrstuvwxyzABCDEFGHI.TextColor3 = Color3.fromRGB(200, 200, 200)
+nopqrstuvwxyzABCDEFGHI.TextScaled = true
+nopqrstuvwxyzABCDEFGHI.Font = Enum.Font.GothamMedium
+nopqrstuvwxyzABCDEFGHI.TextXAlignment = Enum.TextXAlignment.Left
+nopqrstuvwxyzABCDEFGHI.Parent = wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM
 
-local farmToggleCorner2 = Instance.new("UICorner")
-farmToggleCorner2.CornerRadius = UDim.new(0, 4)
-farmToggleCorner2.Parent = farmToggleBtn2
+local ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV = Instance.new("TextButton")
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Size = UDim2.new(0, 140, 0, 35)
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Position = UDim2.new(0, 40, 0, 65)
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Text = "СТАРТ"
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.TextColor3 = Color3.fromRGB(255, 255, 255)
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.TextScaled = true
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Font = Enum.Font.GothamBold
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Parent = wefghijklmnopqrstuvwxyzABCOPQRSTUuvwxyzABCDEFGHIJKLvwxyzABCDEFGHIJKLMNOPQRSlmnopqrstuvwxyzABCDEFGHIJKLM
 
--- ===== ПРАВАЯ ЧАСТЬ (ИНСТРУКЦИЯ) =====
-local rightSide = Instance.new("Frame")
-rightSide.Size = UDim2.new(0, 400, 1, 0)
-rightSide.Position = UDim2.new(1, -410, 0, 0)
-rightSide.BackgroundTransparency = 1
-rightSide.Parent = farmPanel
+local lmnefghijklmnopcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNBCbcdefghijklmnopqrstuvwefghijklmnopqrstuvwxyzABCDE = Instance.new("UICorner")
+lmnefghijklmnopcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNBCbcdefghijklmnopqrstuvwefghijklmnopqrstuvwxyzABCDE.CornerRadius = UDim.new(0, 4)
+lmnefghijklmnopcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNBCbcdefghijklmnopqrstuvwefghijklmnopqrstuvwxyzABCDE.Parent = ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV
 
--- Фон для инструкции
-local instrBg = Instance.new("Frame")
-instrBg.Size = UDim2.new(1, -20, 1, -20)
-instrBg.Position = UDim2.new(0, 10, 0, 10)
-instrBg.BackgroundColor3 = Color3.fromRGB(40, 40, 60)
-instrBg.BackgroundTransparency = 0.4
-instrBg.BorderSizePixel = 0
-instrBg.Parent = rightSide
 
-local instrBgCorner = Instance.new("UICorner")
-instrBgCorner.CornerRadius = UDim.new(0, 8)
-instrBgCorner.Parent = instrBg
+local zABCDEFGHIJKLMNOPQRSTJKLMNOP = Instance.new("Frame")
+zABCDEFGHIJKLMNOPQRSTJKLMNOP.Size = UDim2.new(0, 400, 1, 0)
+zABCDEFGHIJKLMNOPQRSTJKLMNOP.Position = UDim2.new(1, -410, 0, 0)
+zABCDEFGHIJKLMNOPQRSTJKLMNOP.BackgroundTransparency = 1
+zABCDEFGHIJKLMNOPQRSTJKLMNOP.Parent = tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU
 
-local instrTitle = Instance.new("TextLabel")
-instrTitle.Size = UDim2.new(1, 0, 0, 25)
-instrTitle.Position = UDim2.new(0, 0, 0, 5)
-instrTitle.BackgroundTransparency = 1
-instrTitle.Text = "📖 ИНСТРУКЦИЯ"
-instrTitle.TextColor3 = Color3.fromRGB(255, 215, 0)
-instrTitle.TextScaled = true
-instrTitle.Font = Enum.Font.GothamBold
-instrTitle.TextXAlignment = Enum.TextXAlignment.Center
-instrTitle.Parent = instrBg
 
-local instrText = Instance.new("TextLabel")
-instrText.Size = UDim2.new(1, -20, 1, -45)
-instrText.Position = UDim2.new(0, 10, 0, 35)
-instrText.BackgroundTransparency = 1
-instrText.Text = "Что-бы авто фарм работал корректно тебе надо:\n\n1️⃣ Включить NOCLIP\n\n2️⃣ Встать в магазин и смотреть на Мона Лизу\n\n3️⃣ Нажать СТАРТ"
-instrText.TextColor3 = Color3.fromRGB(255, 255, 255)
-instrText.TextScaled = false
-instrText.TextSize = 16
-instrText.Font = Enum.Font.GothamMedium
-instrText.TextXAlignment = Enum.TextXAlignment.Left
-instrText.TextYAlignment = Enum.TextYAlignment.Top
-instrText.Parent = instrBg
+local cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB = Instance.new("Frame")
+cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB.Size = UDim2.new(1, -20, 1, -20)
+cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB.Position = UDim2.new(0, 10, 0, 10)
+cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB.BackgroundColor3 = Color3.fromRGB(40, 40, 60)
+cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB.BackgroundTransparency = 0.4
+cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB.BorderSizePixel = 0
+cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB.Parent = zABCDEFGHIJKLMNOPQRSTJKLMNOP
 
--- ===== ФУНКЦИИ MON FARM =====
-local function monFarmStartFly()
-    local char = player.Character
-    if not char then return end
-    local root = char:FindFirstChild("HumanoidRootPart")
-    if not root then return end
+local DEFGHIJKLMNuvwxyzABCDEFGHIJKLMNOPQRSmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvw = Instance.new("UICorner")
+DEFGHIJKLMNuvwxyzABCDEFGHIJKLMNOPQRSmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvw.CornerRadius = UDim.new(0, 8)
+DEFGHIJKLMNuvwxyzABCDEFGHIJKLMNOPQRSmnopqrstuvwxyzABCDEFGHIJKLabcdefghijklmnopqrstuvw.Parent = cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB
 
-    if monFarmBv then monFarmBv:Destroy() end
-    if monFarmBg then monFarmBg:Destroy() end
+local vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn = Instance.new("TextLabel")
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.Size = UDim2.new(1, 0, 0, 25)
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.Position = UDim2.new(0, 0, 0, 5)
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.BackgroundTransparency = 1
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.Text = "📖 ИНСТРУКЦИЯ"
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.TextColor3 = Color3.fromRGB(255, 215, 0)
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.TextScaled = true
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.Font = Enum.Font.GothamBold
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.TextXAlignment = Enum.TextXAlignment.Center
+vwxyzABCDEFGHIJKLMNOPQdefghijklmnopqrstuvwxyzABCDEFGFGHIJKLMNOPQRSTUVWjklmn.Parent = cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB
 
-    monFarmBv = Instance.new("BodyVelocity")
-    monFarmBv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
-    monFarmBv.Velocity = Vector3.new(0, 0, 0)
-    monFarmBv.Parent = root
+local hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg = Instance.new("TextLabel")
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.Size = UDim2.new(1, -20, 1, -45)
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.Position = UDim2.new(0, 10, 0, 35)
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.BackgroundTransparency = 1
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.Text = "Что-бы авто фарм работал корректно тебе надо:\n\n1️⃣ Включить NOCLIP\n\n2️⃣ Встать в магазин и смотреть на Мона Лизу\n\n3️⃣ Нажать СТАРТ"
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.TextColor3 = Color3.fromRGB(255, 255, 255)
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.TextScaled = false
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.TextSize = 16
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.Font = Enum.Font.GothamMedium
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.TextXAlignment = Enum.TextXAlignment.Left
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.TextYAlignment = Enum.TextYAlignment.Top
+hijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUcdefghijklmnonopqrstuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXefg.Parent = cdefghwxyzABCDEFGHIJnopqrstuvwxyzABCDEFGHIJKLMNOPQRlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZrstuvwxyzAB
 
-    monFarmBg = Instance.new("BodyGyro")
-    monFarmBg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
-    monFarmBg.CFrame = root.CFrame
-    monFarmBg.Parent = root
 
-    monFarmFlyActive = true
+local GHIJKLMNOPQRSTlmnopqrstuvwxyzABCDEFGHIJKLMNO monFarmStartFly()
+    local GghijklmnopqrstuvwxyzABABCDEFGHIJKLMNOPQRSTUVqrstuvwxyzABCDEFGHIJKLM = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+    if not lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then return end
+    local lmnoopqrstuvwxyzABCDEFGnopqrs = lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:FindFirstChild("HumanoidRootPart")
+    if not efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW then return end
+
+    if pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy then pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy:Destroy() end
+    if ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm then ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm:Destroy() end
+
+    pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy = Instance.new("BodyVelocity")
+    pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+    pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy.Velocity = Vector3.new(0, 0, 0)
+    pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy.Parent = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW
+
+    ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm = Instance.new("BodyGyro")
+    ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
+    ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm.CFrame = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame
+    ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm.Parent = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW
+
+    rstuvwxyzABCCDEFGHIJKLMNOPQRSTUVWXhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = true
 end
 
-local function monFarmStopFly()
-    if monFarmBv then monFarmBv:Destroy() monFarmBv = nil end
-    if monFarmBg then monFarmBg:Destroy() monFarmBg = nil end
-    monFarmFlyActive = false
+local xpqrstuvwxyzABCDEFGHIJKLMNOPQRSTABCDEFGHIJKLMNOlmnopqrstuvwxyzdrstuvwxyzABCDEFGHIJKLMNOPQR monFarmStopFly()
+    if pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy then pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy:Destroy() pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy = nil end
+    if ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm then ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm:Destroy() ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm = nil end
+    rstuvwxyzABCCDEFGHIJKLMNOPQRSTUVWXhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = false
 end
 
-local function monFarmFlyTo(pos)
-    if monFarmStopRequested then return end
-    if not monFarmFlyActive then monFarmStartFly() end
+local vwxyzABCDEFGHIJKLMNwxyzABCDEFGHIJKLMNOPQRSTUVWXvwxyzABCDEFGHIJKLMNOPQRSTUVWXghijklmnopqrstuvwPQRabcdefghijklmnopqrstuvwxyzABCDEF monFarmFlyTo(yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN)
+    if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then return end
+    if not rstuvwxyzABCCDEFGHIJKLMNOPQRSTUVWXhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ then monFarmStartFly() end
     
-    local char = player.Character
-    if not char then return end
-    local root = char:FindFirstChild("HumanoidRootPart")
-    if not root or not monFarmBv then return end
+    local stuvwxyzABCDEFGHIJKLMklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUklmnopqrstuvwxyzABCDEFGHIJKLMNOqrstuvwxyzABCDEFGHIJKLM = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+    if not lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then return end
+    local efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW = lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:FindFirstChild("HumanoidRootPart")
+    if not efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW or not pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy then return end
 
-    while monFarmRunning and not monFarmStopRequested do
-        local dist = (root.Position - pos).Magnitude
-        if dist <= 2.5 then break end
+    while lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy and not HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk do
+        local ABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCDEFGHIEFLMNu = (efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position - yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN).Magnitude
+        if defghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIvwbcdefghijklmnopqrstuvwxyzABCDqrstuefghijklmnopqrstuvwxyzABCDEFGHIJKLM <= 2.5 then break end
         
-        local dir = (pos - root.Position).Unit
-        monFarmBv.Velocity = dir * monFarmSpeed
+        local efghijklbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNQRSTU = (yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN - efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position).Unit
+        pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy.Velocity = efghijklbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNQRSTU * ZcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOABCDEFGHIJKLMNOPQRSTUVWXYMNOPQRSTUvwxefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP
         
-        local look = Vector3.new(dir.X, 0, dir.Z)
-        if look.Magnitude > 0.1 then
-            root.CFrame = CFrame.lookAt(root.Position, root.Position + look)
-            if monFarmBg then monFarmBg.CFrame = root.CFrame end
+        local stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXfghijklmde = Vector3.new(efghijklbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNQRSTU.X, 0, efghijklbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNQRSTU.Z)
+        if stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXfghijklmde.Magnitude > 0.1 then
+            efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame = CFrame.lookAt(efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position, efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position + stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXfghijklmde)
+            if ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm then ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm.CFrame = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.CFrame end
         end
         task.wait(0.05)
     end
     
-    monFarmBv.Velocity = Vector3.new(0, 0, 0)
+    pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy.Velocity = Vector3.new(0, 0, 0)
     task.wait(0.1)
     
-    if not monFarmStopRequested then
+    if not HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then
         for i = 1, 8 do
-            if monFarmStopRequested then break end
-            local dist = (root.Position - pos).Magnitude
-            if dist <= 0.5 then break end
-            local smoothDir = (pos - root.Position).Unit
-            root.Position = root.Position + smoothDir * math.min(dist, 0.3)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
+            local defghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIvwbcdefghijklmnopqrstuvwxyzABCDqrstuefghijklmnopqrstuvwxyzABCDEFGHIJKLM = (efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position - yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN).Magnitude
+            if defghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIvwbcdefghijklmnopqrstuvwxyzABCDqrstuefghijklmnopqrstuvwxyzABCDEFGHIJKLM <= 0.5 then break end
+            local pqrstuvwxyzABCDEFGHIJKefghijklmnopqrstuvwxyzABCSTUVWXYuvwxyzABCDEFGHIJKLM = (yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN - efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position).Unit
+            efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position = efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position + pqrstuvwxyzABCDEFGHIJKefghijklmnopqrstuvwxyzABCSTUVWXYuvwxyzABCDEFGHIJKLM * math.min(defghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPCDEFGHIvwbcdefghijklmnopqrstuvwxyzABCDqrstuefghijklmnopqrstuvwxyzABCDEFGHIJKLM, 0.3)
             task.wait(0.03)
         end
-        root.Position = pos
+        efghijklmnopqrstijklmnopqrstuvwHIJKLMNOxyzABCDEFGHIJKLMNOPQRSTUvwxyzABCDEFGHIJKLMNOPQRSTUVW.Position = yzABCDhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWnopqrstuvwxyzABCDEFGHIJKLMN
         task.wait(0.15)
     end
 end
 
-local function monFarmHoldE(duration)
-    if monFarmStopRequested then return end
-    vim:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+local fghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWJKLMNOPQRSTUVWpqrcdefghijklmn monFarmHoldE(duration)
+    if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then return end
+    lmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzuvwxyzABCDEFGHIJKLMNOPQRSTUVW:SendKeyEvent(true, Enum.KeyCode.E, false, game)
     task.wait(duration)
-    vim:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+    lmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzuvwxyzABCDEFGHIJKLMNOPQRSTUVW:SendKeyEvent(false, Enum.KeyCode.E, false, game)
     task.wait(0.1)
 end
 
-local function monFarmBuy()
+local ABCDEFGHIJKLMNOPQRSTUVWgrstuvwxyzABCDEFGHIJ monFarmBuy()
     for i = 1, 5 do
-        if monFarmStopRequested then break end
+        if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
         monFarmHoldE(0.5)
     end
 end
 
-local function monFarmInteract()
-    if monFarmStopRequested then return end
+local wxyzABCDEFGHIJKLMNOlmnopqrstuvwxyzlmnopqrqrstuvwxyzABCDEFGHIJKLbcdefghijklmnopqrstuvwxyzA monFarmInteract()
+    if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then return end
     monFarmHoldE(1)
 end
 
-local function startFarm()
-    if monFarmRunning then return end
-    monFarmRunning = true
-    monFarmStopRequested = false
-    farmToggleBtn2.Text = "СТОП"
-    farmToggleBtn2.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
-    farmStatusLabel2.Text = "Статус: Работает"
+local xystuvwxyzGHIJKbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP startFarm()
+    if lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy then return end
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy = true
+    HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk = false
+    ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Text = "СТОП"
+    ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+    nopqrstuvwxyzABCDEFGHI.Text = "Статус: Работает"
 
     monFarmStartFly()
 
-    coroutine.wrap(function()
-        while monFarmRunning and not monFarmStopRequested do
-            monFarmFlyTo(monFarmConfig.buyPos)
-            if monFarmStopRequested then break end
+    coroutine.wrap(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        while lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy and not HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk do
+            monFarmFlyTo(vw.buyPos)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             monFarmBuy()
-            if monFarmStopRequested then break end
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             
-            monFarmFlyTo(monFarmConfig.point1)
-            if monFarmStopRequested then break end
-            monFarmFlyTo(monFarmConfig.point2)
-            if monFarmStopRequested then break end
-            monFarmFlyTo(monFarmConfig.point3)
-            if monFarmStopRequested then break end
+            monFarmFlyTo(vw.point1)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
+            monFarmFlyTo(vw.point2)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
+            monFarmFlyTo(vw.point3)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             
-            monFarmFlyTo(monFarmConfig.exchangePos)
-            if monFarmStopRequested then break end
+            monFarmFlyTo(vw.exchangePos)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             task.wait(0.3)
             monFarmInteract()
-            if monFarmStopRequested then break end
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             task.wait(0.3)
             
-            monFarmFlyTo(monFarmConfig.point3)
-            if monFarmStopRequested then break end
-            monFarmFlyTo(monFarmConfig.point2)
-            if monFarmStopRequested then break end
-            monFarmFlyTo(monFarmConfig.point1)
-            if monFarmStopRequested then break end
+            monFarmFlyTo(vw.point3)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
+            monFarmFlyTo(vw.point2)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
+            monFarmFlyTo(vw.point1)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             
-            monFarmFlyTo(monFarmConfig.sellPos)
-            if monFarmStopRequested then break end
+            monFarmFlyTo(vw.sellPos)
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             monFarmInteract()
-            if monFarmStopRequested then break end
+            if HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk then break end
             
             task.wait(0.5)
         end
 
-        monFarmRunning = false
+        lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy = false
         monFarmStopFly()
-        farmToggleBtn2.Text = "СТАРТ"
-        farmToggleBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-        farmStatusLabel2.Text = "Статус: Остановлен"
+        ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.Text = "СТАРТ"
+        ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+        nopqrstuvwxyzABCDEFGHI.Text = "Статус: Остановлен"
     end)()
 end
 
-local function stopFarm()
-    monFarmStopRequested = true
-    monFarmRunning = false
+local bcdefghijklmnopqrstuvwxyzABCDEFGHIJKopqrstuvwxyzABCDEFGHIJKLMNO stopFarm()
+    HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk = true
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy = false
 end
 
-farmToggleBtn2.MouseButton1Click:Connect(function()
-    if monFarmRunning then
+ghijklmnopqrstuvwxyzABCDEFGHIEstuvwxyzABCDEFGHIJbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    if lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy then
         stopFarm()
     else
         startFarm()
     end
 end)
 
--- ============================================================
--- ===== BINDS =====
--- ============================================================
-local bindPanel = Instance.new("Frame")
-bindPanel.Size = UDim2.new(1, 0, 1, 0)
-bindPanel.Position = UDim2.new(0, 0, 0, 0)
-bindPanel.BackgroundTransparency = 1
-bindPanel.BorderSizePixel = 0
-bindPanel.Visible = false
-bindPanel.Parent = contentContainer
 
-local bindTitle2 = Instance.new("TextLabel")
-bindTitle2.Size = UDim2.new(1, 0, 0, 25)
-bindTitle2.Position = UDim2.new(0, 0, 0, 10)
-bindTitle2.BackgroundTransparency = 1
-bindTitle2.Text = "BINDS"
-bindTitle2.TextColor3 = Color3.fromRGB(255, 255, 255)
-bindTitle2.TextScaled = true
-bindTitle2.Font = Enum.Font.GothamBold
-bindTitle2.TextXAlignment = Enum.TextXAlignment.Left
-bindTitle2.Parent = bindPanel
 
-local bindFlyBtn2 = Instance.new("TextButton")
-bindFlyBtn2.Size = UDim2.new(0, 160, 0, 30)
-bindFlyBtn2.Position = UDim2.new(0, 40, 0, 40)
-bindFlyBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-bindFlyBtn2.Text = "Fly: [Не назначен]"
-bindFlyBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
-bindFlyBtn2.TextScaled = true
-bindFlyBtn2.Font = Enum.Font.GothamMedium
-bindFlyBtn2.Parent = bindPanel
 
-local bindFlyCorner2 = Instance.new("UICorner")
-bindFlyCorner2.CornerRadius = UDim.new(0, 4)
-bindFlyCorner2.Parent = bindFlyBtn2
+local cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS = Instance.new("Frame")
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Size = UDim2.new(1, 0, 1, 0)
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Position = UDim2.new(0, 0, 0, 0)
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.BackgroundTransparency = 1
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.BorderSizePixel = 0
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible = false
+cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
-local bindNoclipBtn2 = Instance.new("TextButton")
-bindNoclipBtn2.Size = UDim2.new(0, 160, 0, 30)
-bindNoclipBtn2.Position = UDim2.new(0, 40, 0, 75)
-bindNoclipBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-bindNoclipBtn2.Text = "Noclip: [Не назначен]"
-bindNoclipBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
-bindNoclipBtn2.TextScaled = true
-bindNoclipBtn2.Font = Enum.Font.GothamMedium
-bindNoclipBtn2.Parent = bindPanel
+local MNOPQRSTUVWXYwxyzABCD = Instance.new("TextLabel")
+MNOPQRSTUVWXYwxyzABCD.Size = UDim2.new(1, 0, 0, 25)
+MNOPQRSTUVWXYwxyzABCD.Position = UDim2.new(0, 0, 0, 10)
+MNOPQRSTUVWXYwxyzABCD.BackgroundTransparency = 1
+MNOPQRSTUVWXYwxyzABCD.Text = "BINDS"
+MNOPQRSTUVWXYwxyzABCD.TextColor3 = Color3.fromRGB(255, 255, 255)
+MNOPQRSTUVWXYwxyzABCD.TextScaled = true
+MNOPQRSTUVWXYwxyzABCD.Font = Enum.Font.GothamBold
+MNOPQRSTUVWXYwxyzABCD.TextXAlignment = Enum.TextXAlignment.Left
+MNOPQRSTUVWXYwxyzABCD.Parent = cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS
 
-local bindNoclipCorner2 = Instance.new("UICorner")
-bindNoclipCorner2.CornerRadius = UDim.new(0, 4)
-bindNoclipCorner2.Parent = bindNoclipBtn2
+local hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv = Instance.new("TextButton")
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Size = UDim2.new(0, 160, 0, 30)
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Position = UDim2.new(0, 40, 0, 40)
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Text = "Fly: [Не назначен]"
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.TextColor3 = Color3.fromRGB(255, 255, 255)
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.TextScaled = true
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Font = Enum.Font.GothamMedium
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Parent = cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS
 
-local bindSpeedCarBtn2 = Instance.new("TextButton")
-bindSpeedCarBtn2.Size = UDim2.new(0, 160, 0, 30)
-bindSpeedCarBtn2.Position = UDim2.new(0, 40, 0, 110)
-bindSpeedCarBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-bindSpeedCarBtn2.Text = "Speed Car: [Не назначен]"
-bindSpeedCarBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
-bindSpeedCarBtn2.TextScaled = true
-bindSpeedCarBtn2.Font = Enum.Font.GothamMedium
-bindSpeedCarBtn2.Parent = bindPanel
+local nopqrstuvwxdefghijklmghijklmnopqrstuvwxyzABCDEFGHIJKyzABcdefghijklmnopqrstuvwxdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO = Instance.new("UICorner")
+nopqrstuvwxdefghijklmghijklmnopqrstuvwxyzABCDEFGHIJKyzABcdefghijklmnopqrstuvwxdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO.CornerRadius = UDim.new(0, 4)
+nopqrstuvwxdefghijklmghijklmnopqrstuvwxyzABCDEFGHIJKyzABcdefghijklmnopqrstuvwxdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO.Parent = hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv
 
-local bindSpeedCarCorner2 = Instance.new("UICorner")
-bindSpeedCarCorner2.CornerRadius = UDim.new(0, 4)
-bindSpeedCarCorner2.Parent = bindSpeedCarBtn2
+local cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU = Instance.new("TextButton")
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Size = UDim2.new(0, 160, 0, 30)
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Position = UDim2.new(0, 40, 0, 75)
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Text = "Noclip: [Не назначен]"
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.TextColor3 = Color3.fromRGB(255, 255, 255)
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.TextScaled = true
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Font = Enum.Font.GothamMedium
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Parent = cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS
 
-local bindMenuBtn2 = Instance.new("TextButton")
-bindMenuBtn2.Size = UDim2.new(0, 160, 0, 30)
-bindMenuBtn2.Position = UDim2.new(0, 40, 0, 145)
-bindMenuBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
-bindMenuBtn2.Text = "Menu: [LeftAlt]"
-bindMenuBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
-bindMenuBtn2.TextScaled = true
-bindMenuBtn2.Font = Enum.Font.GothamMedium
-bindMenuBtn2.Parent = bindPanel
+local FGHIJKLMNOPQRSTUVWXYefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzAFGHIJKLMNLMNOPQRSTUVhijklmnopqrstuvwxyzABCDEFGHIJKLMNO = Instance.new("UICorner")
+FGHIJKLMNOPQRSTUVWXYefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzAFGHIJKLMNLMNOPQRSTUVhijklmnopqrstuvwxyzABCDEFGHIJKLMNO.CornerRadius = UDim.new(0, 4)
+FGHIJKLMNOPQRSTUVWXYefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOopqrstuvwxyzAFGHIJKLMNLMNOPQRSTUVhijklmnopqrstuvwxyzABCDEFGHIJKLMNO.Parent = cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU
 
-local bindMenuCorner2 = Instance.new("UICorner")
-bindMenuCorner2.CornerRadius = UDim.new(0, 4)
-bindMenuCorner2.Parent = bindMenuBtn2
+local qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC = Instance.new("TextButton")
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Size = UDim2.new(0, 160, 0, 30)
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Position = UDim2.new(0, 40, 0, 110)
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Text = "Speed Car: [Не назначен]"
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.TextColor3 = Color3.fromRGB(255, 255, 255)
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.TextScaled = true
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Font = Enum.Font.GothamMedium
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Parent = cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS
 
-local menuBindKey = Enum.KeyCode.LeftAlt
-local waitingForFlyBind2 = false
-local waitingForNoclipBind2 = false
-local waitingForSpeedCarBind2 = false
-local waitingForMenuBind2 = false
-local bindConnectionMain2 = nil
+local HIJKLMNOPQRSTxyzABCDEFGHIJKLMNOPBCDEF = Instance.new("UICorner")
+HIJKLMNOPQRSTxyzABCDEFGHIJKLMNOPBCDEF.CornerRadius = UDim.new(0, 4)
+HIJKLMNOPQRSTxyzABCDEFGHIJKLMNOPBCDEF.Parent = qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC
 
-local function updateBindDisplay2()
-    if flyBindKey then
-        bindFlyBtn2.Text = "Fly: [" .. flyBindKey.Name .. "]"
+local efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm = Instance.new("TextButton")
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Size = UDim2.new(0, 160, 0, 30)
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Position = UDim2.new(0, 40, 0, 145)
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Text = "Menu: [LeftAlt]"
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.TextColor3 = Color3.fromRGB(255, 255, 255)
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.TextScaled = true
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Font = Enum.Font.GothamMedium
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Parent = cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS
+
+local klmnopqrBCDEFGHIJKLMNOPQRSsuvwxyzABCDEFGHIJKLMNO = Instance.new("UICorner")
+klmnopqrBCDEFGHIJKLMNOPQRSsuvwxyzABCDEFGHIJKLMNO.CornerRadius = UDim.new(0, 4)
+klmnopqrBCDEFGHIJKLMNOPQRSsuvwxyzABCDEFGHIJKLMNO.Parent = efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm
+
+local efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO = Enum.KeyCode.LeftAlt
+local wxyzABCDEFcdefghijklmnopqrstuvwxyzAtabcdijklmnopqrstuvwxyzAB = false
+local IJhijklmnopqrstuvwxyzABCDEFGHIJKLlmnopqrstuvwxyzABCDEFGHIJK = false
+local RSTUVqrstuvwxyzqrstuvwxyzABCDEFGHIJKLhijklmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzAB = false
+local VefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXGHIJKLMNqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = false
+local GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX = nil
+
+local ihHIJKLMNOPQRSHIJKLMNOPQRSTUV updateBindDisplay2()
+    if ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF then
+        hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Text = "Fly: [" .. ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF.Name .. "]"
     else
-        bindFlyBtn2.Text = "Fly: [Не назначен]"
+        hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Text = "Fly: [Не назначен]"
     end
     
-    if noclipBindKey then
-        bindNoclipBtn2.Text = "Noclip: [" .. noclipBindKey.Name .. "]"
+    if HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn then
+        cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Text = "Noclip: [" .. HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn.Name .. "]"
     else
-        bindNoclipBtn2.Text = "Noclip: [Не назначен]"
+        cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Text = "Noclip: [Не назначен]"
     end
     
-    if speedCarBindKey then
-        bindSpeedCarBtn2.Text = "Speed Car: [" .. speedCarBindKey.Name .. "]"
+    if lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA then
+        qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Text = "Speed Car: [" .. lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA.Name .. "]"
     else
-        bindSpeedCarBtn2.Text = "Speed Car: [Не назначен]"
+        qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Text = "Speed Car: [Не назначен]"
     end
     
-    if menuBindKey then
-        bindMenuBtn2.Text = "Menu: [" .. menuBindKey.Name .. "]"
+    if efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO then
+        efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Text = "Menu: [" .. efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO.Name .. "]"
     else
-        bindMenuBtn2.Text = "Menu: [Не назначен]"
+        efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Text = "Menu: [Не назначен]"
     end
 end
 
-bindFlyBtn2.MouseButton1Click:Connect(function()
-    waitingForFlyBind2 = true
-    bindFlyBtn2.Text = "Нажми клавишу..."
-    bindFlyBtn2.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    wxyzABCDEFcdefghijklmnopqrstuvwxyzAtabcdijklmnopqrstuvwxyzAB = true
+    hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.Text = "Нажми клавишу..."
+    hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 end)
 
-bindNoclipBtn2.MouseButton1Click:Connect(function()
-    waitingForNoclipBind2 = true
-    bindNoclipBtn2.Text = "Нажми клавишу..."
-    bindNoclipBtn2.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    IJhijklmnopqrstuvwxyzABCDEFGHIJKLlmnopqrstuvwxyzABCDEFGHIJK = true
+    cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.Text = "Нажми клавишу..."
+    cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 end)
 
-bindSpeedCarBtn2.MouseButton1Click:Connect(function()
-    waitingForSpeedCarBind2 = true
-    bindSpeedCarBtn2.Text = "Нажми клавишу..."
-    bindSpeedCarBtn2.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    RSTUVqrstuvwxyzqrstuvwxyzABCDEFGHIJKLhijklmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzAB = true
+    qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.Text = "Нажми клавишу..."
+    qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 end)
 
-bindMenuBtn2.MouseButton1Click:Connect(function()
-    waitingForMenuBind2 = true
-    bindMenuBtn2.Text = "Нажми клавишу..."
-    bindMenuBtn2.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    VefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXGHIJKLMNqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = true
+    efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.Text = "Нажми клавишу..."
+    efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 end)
 
--- ============================================================
--- ===== CLOSE PANEL (ВКЛАДКА) =====
--- ============================================================
-local closePanel2 = Instance.new("Frame")
-closePanel2.Size = UDim2.new(1, 0, 1, 0)
-closePanel2.Position = UDim2.new(0, 0, 0, 0)
-closePanel2.BackgroundTransparency = 1
-closePanel2.BorderSizePixel = 0
-closePanel2.Visible = false
-closePanel2.Parent = contentContainer
 
-local closeTitle2 = Instance.new("TextLabel")
-closeTitle2.Size = UDim2.new(1, 0, 0, 25)
-closeTitle2.Position = UDim2.new(0, 0, 0, 10)
-closeTitle2.BackgroundTransparency = 1
-closeTitle2.Text = "CLOSE"
-closeTitle2.TextColor3 = Color3.fromRGB(255, 255, 255)
-closeTitle2.TextScaled = true
-closeTitle2.Font = Enum.Font.GothamBold
-closeTitle2.TextXAlignment = Enum.TextXAlignment.Left
-closeTitle2.Parent = closePanel2
 
-local closeStatusLabel2 = Instance.new("TextLabel")
-closeStatusLabel2.Size = UDim2.new(1, 0, 0, 20)
-closeStatusLabel2.Position = UDim2.new(0, 0, 0, 40)
-closeStatusLabel2.BackgroundTransparency = 1
-closeStatusLabel2.Text = "Полное выключение скрипта"
-closeStatusLabel2.TextColor3 = Color3.fromRGB(200, 200, 200)
-closeStatusLabel2.TextScaled = true
-closeStatusLabel2.Font = Enum.Font.GothamMedium
-closeStatusLabel2.TextXAlignment = Enum.TextXAlignment.Left
-closeStatusLabel2.Parent = closePanel2
 
-local closeAllBtn2 = Instance.new("TextButton")
-closeAllBtn2.Size = UDim2.new(0, 160, 0, 35)
-closeAllBtn2.Position = UDim2.new(0, 40, 0, 65)
-closeAllBtn2.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
-closeAllBtn2.BackgroundTransparency = 0
-closeAllBtn2.Text = "ВЫКЛЮЧИТЬ"
-closeAllBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
-closeAllBtn2.TextScaled = true
-closeAllBtn2.Font = Enum.Font.GothamBold
-closeAllBtn2.Parent = closePanel2
+local efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD = Instance.new("Frame")
+efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Size = UDim2.new(1, 0, 1, 0)
+efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Position = UDim2.new(0, 0, 0, 0)
+efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.BackgroundTransparency = 1
+efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.BorderSizePixel = 0
+efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible = false
+efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Parent = MNvwxyzABCDEFGHIJKLMNOPQ
 
-local closeAllCorner2 = Instance.new("UICorner")
-closeAllCorner2.CornerRadius = UDim.new(0, 4)
-closeAllCorner2.Parent = closeAllBtn2
+local defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ = Instance.new("TextLabel")
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.Size = UDim2.new(1, 0, 0, 25)
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.Position = UDim2.new(0, 0, 0, 10)
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.BackgroundTransparency = 1
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.Text = "CLOSE"
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.TextColor3 = Color3.fromRGB(255, 255, 255)
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.TextScaled = true
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.Font = Enum.Font.GothamBold
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.TextXAlignment = Enum.TextXAlignment.Left
+defghijklmnopqcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWqrstuvwxyzABCDEFBCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXCDEFGHIJKLMNOPQ.Parent = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD
 
-closeAllBtn2.MouseButton1Click:Connect(function()
-    if flyStatus then
-        if bodyVelocity then bodyVelocity:Destroy() bodyVelocity = nil end
-        if bodyGyro then bodyGyro:Destroy() bodyGyro = nil end
-        flyStatus = false
+local nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN = Instance.new("TextLabel")
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.Size = UDim2.new(1, 0, 0, 20)
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.Position = UDim2.new(0, 0, 0, 40)
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.BackgroundTransparency = 1
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.Text = "Полное выключение скрипта"
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.TextColor3 = Color3.fromRGB(200, 200, 200)
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.TextScaled = true
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.Font = Enum.Font.GothamMedium
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.TextXAlignment = Enum.TextXAlignment.Left
+nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRuvwBCDEFGlmnopqrstuvwxyzABCDEFGHIJKLMN.Parent = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD
+
+local abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC = Instance.new("TextButton")
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.Size = UDim2.new(0, 160, 0, 35)
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.Position = UDim2.new(0, 40, 0, 65)
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.BackgroundTransparency = 0
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.Text = "ВЫКЛЮЧИТЬ"
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.TextColor3 = Color3.fromRGB(255, 255, 255)
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.TextScaled = true
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.Font = Enum.Font.GothamBold
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.Parent = efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD
+
+local LMNOPQabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSWXfghijklmnopqrstuvwxyzABCDEFGHIJKlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY = Instance.new("UICorner")
+LMNOPQabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSWXfghijklmnopqrstuvwxyzABCDEFGHIJKlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.CornerRadius = UDim.new(0, 4)
+LMNOPQabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSWXfghijklmnopqrstuvwxyzABCDEFGHIJKlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.Parent = abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC
+
+abcdefghijklmnopqrstuvwxyzqrstuvwxyzABCDEFGHIJKLMNOPQjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZopqrstuvwxyzABC.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    if qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST then
+        if rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM then rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM:Destroy() rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYcdefghijklmnopqrstuvwxyzABCDEFGHIJKLM = nil end
+        if bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF then bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF:Destroy() bEFGHIJKLMNOPQRSqrstuvwxyzABCDEF = nil end
+        qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST = false
     end
 
-    if monFarmRunning then
-        monFarmStopRequested = true
-        monFarmRunning = false
-        if monFarmBv then monFarmBv:Destroy() monFarmBv = nil end
-        if monFarmBg then monFarmBg:Destroy() monFarmBg = nil end
-        monFarmFlyActive = false
+    if lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy then
+        HIJKLMNOwxyzABCDEFGHIJKLMNOPQRSTUhijk = true
+        lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYstuvwxyzABCDEFGHIJKLMNOPQRSTbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNzABCDEFGHIJKLMNOPQRSTklmnopqrstuvwxy = false
+        if pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy then pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy:Destroy() pqrstuvwxyzABCDEFGHIJKLMNGHIJKLMNOPEFGHIJKLMNcdefghijklmnqrstuvwxyzABCDEcdefghijklmnopqrstuvwxy = nil end
+        if ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm then ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm:Destroy() ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWghirstuvwxyzAnopqrstuvwxyzABCDEFGHIJrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYfghijklm = nil end
+        rstuvwxyzABCCDEFGHIJKLMNOPQRSTUVWXhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = false
     end
 
-    if noclipActive then
-        noclipActive = false
-        if noclipConn then
-            noclipConn:Disconnect()
-            noclipConn = nil
+    if ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcdefghiDEFGHIJKLMNOabcdefghijklmabc then
+        ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZcdefghiDEFGHIJKLMNOabcdefghijklmabc = false
+        if abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW then
+            abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW:Disconnect()
+            abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopnopqrstuvwxyzABCDEFGHIJKLMNOPQRjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUEFGHIJFGHIJKLMNOPQRSTUVW = nil
         end
-        local char = player.Character
-        if char then
-            for _, v in pairs(char:GetDescendants()) do
+        local lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ = efghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQstuvwxyzABCDEFGHIJKLMNOPQRSTUdefghijklmnopqrstuvwxyzABCDEFGHIJKLMuvwxyzABCDEFGHIJKL.Character
+        if lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ then
+            for _, v in pairs(lmnopqrsdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZklmnopqrstuvwxyzABCDEFGHIJ:GetDescendants()) do
                 if v:IsA("BasePart") then
                     v.CanCollide = true
                 end
@@ -1327,9 +1327,9 @@ closeAllBtn2.MouseButton1Click:Connect(function()
         end
     end
 
-    if bindConnectionMain2 then
-        bindConnectionMain2:Disconnect()
-        bindConnectionMain2 = nil
+    if GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX then
+        GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX:Disconnect()
+        GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX = nil
     end
 
     for _, v in pairs(workspace:GetChildren()) do
@@ -1338,280 +1338,280 @@ closeAllBtn2.MouseButton1Click:Connect(function()
         end
     end
 
-    local replicatedStorage = game:GetService("ReplicatedStorage")
-    for _, v in pairs(replicatedStorage:GetChildren()) do
+    local hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSBCDEFGHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZGHIJ = game:GetService("ReplicatedStorage")
+    for _, v in pairs(hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSBCDEFGHIJKLMbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZGHIJ:GetChildren()) do
         if v:IsA("RemoteEvent") and string.find(v.Name, "Rocket") then
             v:Destroy()
         end
     end
 
-    screenGui:Destroy()
-    print("ROCKET: Скрипт полностью выключен.")
-    error("ROCKET: Скрипт остановлен.")
+    ymnopqrstutuvwxyzABCDEFGH:Destroy()
+    print("Ultra: Скрипт полностью выключен.")
+    error("Ultra: Скрипт остановлен.")
 end)
 
--- ============================================================
--- ===== КНОПКИ МЕНЮ =====
--- ============================================================
-local function openHomePanel()
-    homePanel.Visible = true
-    miscPanel.Visible = false
-    farmPanel.Visible = false
-    bindPanel.Visible = false
-    closePanel2.Visible = false
+
+
+
+local EFGHIJKLMNOPQRxydefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRScdefghijklmnopqrstuvwxyzABCDEFGH openHomePanel()
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Visible = true
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible = false
+    tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible = false
+    cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible = false
+    efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible = false
 end
 
-local function openMiscPanel()
-    homePanel.Visible = false
-    farmPanel.Visible = false
-    bindPanel.Visible = false
-    closePanel2.Visible = false
-    miscPanel.Visible = not miscPanel.Visible
+local stuvwxyzABCDEFGHIJKLQRSTUVxyzABCDEFGHIJKLMTUVWFGHIlmnopqrstuvwxyyzABCDEFGHIJK openMiscPanel()
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Visible = false
+    tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible = false
+    cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible = false
+    efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible = false
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible = not abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible
 end
 
-local function openFarmPanel()
-    homePanel.Visible = false
-    miscPanel.Visible = false
-    bindPanel.Visible = false
-    closePanel2.Visible = false
-    farmPanel.Visible = not farmPanel.Visible
+local wxyzABCDEFGHIJKLNOijklmnopqrstuvwxyzABghijklmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstuvwxyzHIJKLMNOPQRabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxy openFarmPanel()
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Visible = false
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible = false
+    cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible = false
+    efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible = false
+    tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible = not tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible
 end
 
-local function openBindPanel()
-    homePanel.Visible = false
-    miscPanel.Visible = false
-    farmPanel.Visible = false
-    closePanel2.Visible = false
-    bindPanel.Visible = not bindPanel.Visible
+local ijklmnopqrstuvwxyzABCDEFL openBindPanel()
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Visible = false
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible = false
+    tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible = false
+    efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible = false
+    cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible = not cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible
 end
 
-local function openClosePanel()
-    homePanel.Visible = false
-    miscPanel.Visible = false
-    farmPanel.Visible = false
-    bindPanel.Visible = false
-    closePanel2.Visible = not closePanel2.Visible
+local defghijklmnopqrstuvBCDEFGHIJKLdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSjklmnopqrstuvwxyzABCDEFGHjklmnopqrstuvwxyzABCDEFGHIJKghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV openClosePanel()
+    lmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTdefghijklmnopqrsGHIJKLMNOPQRSTUVstuvwxyzABCDEFGHIJKLMNOPQRSTUGHIJKLMNOPQRSTUVW.Visible = false
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYghijkxyzABCDEFGHIJKLMNOPqrstuvwxyzABCDEFGHIJKLMNOPQR.Visible = false
+    tuopqrstuvwxyzABCDEghijklmnopqrsBCDEFGHIJKLMNOPQRSTU.Visible = false
+    cdefghijklmnopqrstuvwxyzABCDEFGHIJKuvzABCDEFGHABCDEFGHIJKLMNOPQRS.Visible = false
+    efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible = not efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSmnoopqrsttuvwxyzABCD.Visible
 end
 
-local buttonX = 15
-local buttonY = 55
-local buttonWidth = 110
-local buttonHeight = 28
-local gap = 8
+local stuvwxyzABCDEFGHIJKLMNODEFGHIJbcdefghijklmnopqrstumnopqrstufghijklmnopqrstuvw = 15
+local defghijklmnopqrstuvwxyzABCDEFGHIscdefghijklmnopqrstuvwxyzABCDEFGrsdefg = 55
+local jklmnopqrstuvwxyzABCDEFGBCDEFGHIJKLMNOPQ = 110
+local defghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVghijklmnopq = 28
+local xyzABghijklmnopqrstuvwxyzABCDEFGHIJKxyzABCDEFGHIJKLMNOPQRSTUVxyzABCDEF = 8
 
-local buttons = {}
+local cdefghlmnfghijklmnopqrstuvwxuvwxyzABCDEFGHIJKLMNOPQRSTUzABCDEFGHIJKLMN = {}
 
-local function createButton(text, yPos, callback)
-    local btn = Instance.new("TextButton")
-    btn.Size = UDim2.new(0, buttonWidth, 0, buttonHeight)
-    btn.Position = UDim2.new(0, buttonX, 0, yPos)
-    btn.BackgroundColor3 = colors[1]
-    btn.BackgroundTransparency = 0.3
-    btn.Text = text
-    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
-    btn.TextScaled = true
-    btn.Font = Enum.Font.GothamMedium
-    btn.Parent = mainFrame
+local CDEFGHIJKLMNOPQRSTjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZHS createButton(text, yPos, callback)
+    local GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS = Instance.new("TextButton")
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.Size = UDim2.new(0, jklmnopqrstuvwxyzABCDEFGBCDEFGHIJKLMNOPQ, 0, defghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVghijklmnopq)
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.Position = UDim2.new(0, stuvwxyzABCDEFGHIJKLMNODEFGHIJbcdefghijklmnopqrstumnopqrstufghijklmnopqrstuvw, 0, yPos)
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.BackgroundColor3 = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[1]
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.BackgroundTransparency = 0.3
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.Text = text
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.TextColor3 = Color3.fromRGB(255, 255, 255)
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.TextScaled = true
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.Font = Enum.Font.GothamMedium
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.Parent = wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl
 
-    local btnCorner = Instance.new("UICorner")
-    btnCorner.CornerRadius = UDim.new(0, 4)
-    btnCorner.Parent = btn
+    local BCDEFGHIJKdefghijklmnopqrstuvwxyzABCDEFGHijklmnopqrstuvwxyzABCDEFGHIJKLMN = Instance.new("UICorner")
+    BCDEFGHIJKdefghijklmnopqrstuvwxyzABCDEFGHijklmnopqrstuvwxyzABCDEFGHIJKLMN.CornerRadius = UDim.new(0, 4)
+    BCDEFGHIJKdefghijklmnopqrstuvwxyzABCDEFGHijklmnopqrstuvwxyzABCDEFGHIJKLMN.Parent = GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS
 
-    btn.MouseButton1Down:Connect(function()
-        local moveDown = tweens:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-            Position = UDim2.new(0, buttonX, 0, yPos + 4)
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.MouseButton1Down:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        local n = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Position = UDim2.new(0, stuvwxyzABCDEFGHIJKLMNODEFGHIJbcdefghijklmnopqrstumnopqrstufghijklmnopqrstuvw, 0, yPos + 4)
         })
-        moveDown:Play()
+        n:Play()
     end)
 
-    btn.MouseButton1Up:Connect(function()
-        local moveUp = tweens:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-            Position = UDim2.new(0, buttonX, 0, yPos)
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.MouseButton1Up:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        local efghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYdefghijklmnopqrstuvwxqrstuvwxyzABCDEFGHIJK = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Position = UDim2.new(0, stuvwxyzABCDEFGHIJKLMNODEFGHIJbcdefghijklmnopqrstumnopqrstufghijklmnopqrstuvw, 0, yPos)
         })
-        moveUp:Play()
+        ghijklmnopqrstuvwxyzABCDEFGjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZdefghijklmnopqrstuvwxyzABCDEFyzABCDEFGHIJKLMNOPQRSTUVWXYUVWXYuvwxyzABCDEFGHIJKLM:Play()
     end)
 
-    btn.MouseLeave:Connect(function()
-        local moveUp = tweens:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-            Position = UDim2.new(0, buttonX, 0, yPos)
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.MouseLeave:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        local ghijklmnopqrstuvwxyzABCDEFGjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZdefghijklmnopqrstuvwxyzABCDEFyzABCDEFGHIJKLMNOPQRSTUVWXYUVWXYuvwxyzABCDEFGHIJKLM = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Position = UDim2.new(0, stuvwxyzABCDEFGHIJKLMNODEFGHIJbcdefghijklmnopqrstumnopqrstufghijklmnopqrstuvw, 0, yPos)
         })
-        moveUp:Play()
+        ghijklmnopqrstuvwxyzABCDEFGjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZdefghijklmnopqrstuvwxyzABCDEFyzABCDEFGHIJKLMNOPQRSTUVWXYUVWXYuvwxyzABCDEFGHIJKLM:Play()
     end)
 
-    btn.MouseButton1Click:Connect(callback)
-    table.insert(buttons, btn)
-    return btn
+    GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.MouseButton1Click:Connect(callback)
+    table.insert(cdefghlmnfghijklmnopqrstuvwxuvwxyzABCDEFGHIJKLMNOPQRSTUzABCDEFGHIJKLMN, GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS)
+    return GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS
 end
 
-local homeBtn = createButton("Home", buttonY, openHomePanel)
-local miscBtn = createButton("Misc", buttonY + buttonHeight + gap, openMiscPanel)
-local farmBtn = createButton("Farm", buttonY + (buttonHeight + gap) * 2, openFarmPanel)
-local bindBtn = createButton("Bind", buttonY + (buttonHeight + gap) * 3, openBindPanel)
-local closeBtn = createButton("Close", buttonY + (buttonHeight + gap) * 4, openClosePanel)
+local qrstuv = createButton("Home", defghijklmnopqrstuvwxyzABCDEFGHIscdefghijklmnopqrstuvwxyzABCDEFGrsdefg, openHomePanel)
+local tuvwfghijklmnopqrstuvwxyzABCDEFGHIJKLMyzABCDEFGHIJKLMNOPQRSTuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = createButton("Misc", defghijklmnopqrstuvwxyzABCDEFGHIscdefghijklmnopqrstuvwxyzABCDEFGrsdefg + defghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVghijklmnopq + xyzABghijklmnopqrstuvwxyzABCDEFGHIJKxyzABCDEFGHIJKLMNOPQRSTUVxyzABCDEF, openMiscPanel)
+local fghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRJKLMN = createButton("Farm", defghijklmnopqrstuvwxyzABCDEFGHIscdefghijklmnopqrstuvwxyzABCDEFGrsdefg + (defghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVghijklmnopq + xyzABghijklmnopqrstuvwxyzABCDEFGHIJKxyzABCDEFGHIJKLMNOPQRSTUVxyzABCDEF) * 2, openFarmPanel)
+local cdefghijklmnopqrstuvwxyefghijIlmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZlmnopqrstuvwxyzABCDEFGJKLMNOPQRSTUVWXdefghijklmnopqrs = createButton("Bind", defghijklmnopqrstuvwxyzABCDEFGHIscdefghijklmnopqrstuvwxyzABCDEFGrsdefg + (defghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVghijklmnopq + xyzABghijklmnopqrstuvwxyzABCDEFGHIJKxyzABCDEFGHIJKLMNOPQRSTUVxyzABCDEF) * 3, openBindPanel)
+local hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVIJKLMNOPQRSPQRefghijklmnopqrstuvwxyzABCDEFGHstuvwxyzABCDEFGHIJ = createButton("Close", defghijklmnopqrstuvwxyzABCDEFGHIscdefghijklmnopqrstuvwxyzABCDEFGrsdefg + (defghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVghijklmnopq + xyzABghijklmnopqrstuvwxyzABCDEFGHIJKxyzABCDEFGHIJKLMNOPQRSTUVxyzABCDEF) * 4, openClosePanel)
 
--- ===== ПЕРЕЛИВ КНОПОК =====
-local btnColorIndex = 1
-local btnTween = nil
 
-local function startButtonsColorCycle()
+local MNOPQRSmnopqrstuvwxyzABCDEFGHIJKGHIJKLMNOPQRSTvwxyzABCDEFGHIJKLMNOPQRSTUVWXstuvwxyzABCDEFGHIJKLMNO = 1
+local stuvwxyzAHIJKLMNOPQRS = nil
+
+local defghijklmnopqrstuvwxyzABCcdeijklmno startButtonsColorCycle()
     while true do
-        local nextColor = colors[btnColorIndex % #colors + 1]
-        for _, btn in pairs(buttons) do
-            if btn and btn.Parent then
-                btnTween = tweens:Create(btn, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
-                    BackgroundColor3 = nextColor
+        local ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPPQRopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXLMNOmnopqrstuvwxyzABCDEFGHIJNOPQRSTUVW = JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF[MNOPQRSmnopqrstuvwxyzABCDEFGHIJKGHIJKLMNOPQRSTvwxyzABCDEFGHIJKLMNOPQRSTUVWXstuvwxyzABCDEFGHIJKLMNO % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1]
+        for _, GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS in pairs(cdefghlmnfghijklmnopqrstuvwxuvwxyzABCDEFGHIJKLMNOPQRSTUzABCDEFGHIJKLMN) do
+            if GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS and GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS.Parent then
+                stuvwxyzAHIJKLMNOPQRS = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(GHIJKLMNOPQyzABCDSrstuvwxyzABCDEFGHIJKLMNOPQRS, TweenInfo.new(0.8, Enum.EasingStyle.Linear), {
+                    BackgroundColor3 = ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPPQRopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXLMNOmnopqrstuvwxyzABCDEFGHIJNOPQRSTUVW
                 })
-                btnTween:Play()
+                stuvwxyzAHIJKLMNOPQRS:Play()
             end
         end
-        btnTween.Completed:Wait()
-        btnColorIndex = btnColorIndex % #colors + 1
+        stuvwxyzAHIJKLMNOPQRS.Completed:Wait()
+        MNOPQRSmnopqrstuvwxyzABCDEFGHIJKGHIJKLMNOPQRSTvwxyzABCDEFGHIJKLMNOPQRSTUVWXstuvwxyzABCDEFGHIJKLMNO = MNOPQRSmnopqrstuvwxyzABCDEFGHIJKGHIJKLMNOPQRSTvwxyzABCDEFGHIJKLMNOPQRSTUVWXstuvwxyzABCDEFGHIJKLMNO % #JKLMjklmnopqrstuvwxyzABCDEFGHIJKLMEF + 1
     end
 end
 
 coroutine.wrap(startButtonsColorCycle)()
 
--- ============================================================
--- ===== АНИМАЦИИ МЕНЮ =====
--- ============================================================
-local menuVisible = true
-local animationPlaying = false
 
-local function showMenu()
-    if animationPlaying then 
-        animationPlaying = false
+
+
+local jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM = true
+local GHIJKLMNOPQRST = false
+
+local HIJKLMNcdefxyzAopqrstuvwxyzABCDEFGHIJKLMNOPQRS showMenu()
+    if GHIJKLMNOPQRST then 
+        GHIJKLMNOPQRST = false
     end
-    menuVisible = true
-    mainFrame.Visible = true
-    openMenuBtn.Visible = true
-    animationPlaying = true
+    jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM = true
+    wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible = true
+    opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Visible = true
+    GHIJKLMNOPQRST = true
     
-    mainFrame.BackgroundTransparency = 0.15
+    wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BackgroundTransparency = 0.15
     
-    local fadeIn = tweens:Create(mainFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+    local CDErstuvwxyzABCDEFGHIJlmnopqrstuvwxyzABCDEFGHI = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
         BackgroundTransparency = 0.15
     })
-    fadeIn:Play()
-    fadeIn.Completed:Connect(function()
-        animationPlaying = false
+    CDErstuvwxyzABCDEFGHIJlmnopqrstuvwxyzABCDEFGHI:Play()
+    CDErstuvwxyzABCDEFGHIJlmnopqrstuvwxyzABCDEFGHI.Completed:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        GHIJKLMNOPQRST = false
     end)
     task.wait(0.3)
-    animationPlaying = false
+    GHIJKLMNOPQRST = false
 end
 
-local function hideMenu()
-    if animationPlaying then 
-        animationPlaying = false
+local jklmnopqrstuvwxyzABCDEFGHIJKLMNOPQqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYlmno hideMenu()
+    if GHIJKLMNOPQRST then 
+        GHIJKLMNOPQRST = false
     end
-    menuVisible = false
-    animationPlaying = true
+    jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM = false
+    GHIJKLMNOPQRST = true
     
-    local fadeOut = tweens:Create(mainFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    local PQRSTxyzABCDEFGHIJKLMNOPQRSTUVWXYZTbcdefghijklmnopqrstuvwxydefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY = TUghijklmnopqopqrstuvwxyzABCDEFGHIJKLfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW:Create(wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
         BackgroundTransparency = 1
     })
-    fadeOut:Play()
-    fadeOut.Completed:Connect(function()
-        if not menuVisible then
-            mainFrame.Visible = false
+    PQRSTxyzABCDEFGHIJKLMNOPQRSTUVWXYZTbcdefghijklmnopqrstuvwxydefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY:Play()
+    PQRSTxyzABCDEFGHIJKLMNOPQRSTUVWXYZTbcdefghijklmnopqrstuvwxydefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUfghijklmnopqrstuvwxyzABhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY.Completed:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        if not jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
+            wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible = false
         end
-        animationPlaying = false
+        GHIJKLMNOPQRST = false
     end)
     task.wait(0.3)
-    animationPlaying = false
+    GHIJKLMNOPQRST = false
 end
 
-local function toggleMenu()
-    if animationPlaying then 
-        animationPlaying = false
+local bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRVWXYghijklmnopqrstuvwxyzABCDEFEFGHIJKLMNOPQRSTpqrstuvwxyzABCBCDEFGHIJzABCDEFGHIJKLMNOPQRSTUVWXYZ toggleMenu()
+    if GHIJKLMNOPQRST then 
+        GHIJKLMNOPQRST = false
     end
-    if menuVisible then
+    if jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
         hideMenu()
     else
         showMenu()
     end
 end
 
-closeMenuBtn.MouseButton1Click:Connect(function()
-    if menuVisible then
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    if jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
         hideMenu()
     else
         showMenu()
     end
 end)
 
-openMenuBtn.MouseButton1Click:Connect(function()
-    if menuVisible then
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    if jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
         hideMenu()
     else
         showMenu()
     end
 end)
 
--- ============================================================
--- ===== ОСНОВНОЙ ОБРАБОТЧИК БИНДОВ =====
--- ============================================================
-local function createBindHandler2()
-    if bindConnectionMain2 then
-        bindConnectionMain2:Disconnect()
-        bindConnectionMain2 = nil
+
+
+
+local jklmnopqrstuvwxyzlmnopqrstucdefghijklmnGHIJ createBindHandler2()
+    if GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX then
+        GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX:Disconnect()
+        GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX = nil
     end
     
-    bindConnectionMain2 = userInputService.InputBegan:Connect(function(input, gameProcessed)
+    GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX = abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputBegan:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input, gameProcessed)
         if gameProcessed then return end
         if input.KeyCode == Enum.KeyCode.Unknown then return end
 
-        if waitingForFlyBind2 then
-            flyBindKey = input.KeyCode
-            waitingForFlyBind2 = false
-            bindFlyBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+        if wxyzABCDEFcdefghijklmnopqrstuvwxyzAtabcdijklmnopqrstuvwxyzAB then
+            ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF = input.KeyCode
+            wxyzABCDEFcdefghijklmnopqrstuvwxyzAtabcdijklmnopqrstuvwxyzAB = false
+            hijklmnuvwxyzABCDEFGHIJKLfghijklmnopqrstuyzABCDEFGHIJqrstuv.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
             updateBindDisplay2()
-            print("ROCKET: Fly привязан к " .. flyBindKey.Name)
+            print("Ultra: Fly привязан к " .. ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF.Name)
             return
         end
 
-        if waitingForNoclipBind2 then
-            noclipBindKey = input.KeyCode
-            waitingForNoclipBind2 = false
-            bindNoclipBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+        if IJhijklmnopqrstuvwxyzABCDEFGHIJKLlmnopqrstuvwxyzABCDEFGHIJK then
+            HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn = input.KeyCode
+            IJhijklmnopqrstuvwxyzABCDEFGHIJKLlmnopqrstuvwxyzABCDEFGHIJK = false
+            cdefghijklijklmghijklmnopqrstuvwxyzABCDEFGopqrstuvwxyzABCDEFGHIJKLMvwxyzABCDEFGHIJKLMNOPQRSTU.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
             updateBindDisplay2()
-            print("ROCKET: Noclip привязан к " .. noclipBindKey.Name)
+            print("Ultra: Noclip привязан к " .. HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn.Name)
             return
         end
 
-        if waitingForSpeedCarBind2 then
-            speedCarBindKey = input.KeyCode
-            waitingForSpeedCarBind2 = false
-            bindSpeedCarBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+        if RSTUVqrstuvwxyzqrstuvwxyzABCDEFGHIJKLhijklmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzAB then
+            lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA = input.KeyCode
+            RSTUVqrstuvwxyzqrstuvwxyzABCDEFGHIJKLhijklmnopqrstuvwxyzABCbcdefghijklmnopqrstuvwxyzAB = false
+            qrstuvwxyzABCDEFGHIJKDEFGrstuvwxyzABC.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
             updateBindDisplay2()
-            print("ROCKET: Speed Car привязан к " .. speedCarBindKey.Name)
+            print("Ultra: Speed Car привязан к " .. lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA.Name)
             return
         end
 
-        if waitingForMenuBind2 then
-            menuBindKey = input.KeyCode
-            waitingForMenuBind2 = false
-            bindMenuBtn2.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+        if VefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXGHIJKLMNqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW then
+            efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO = input.KeyCode
+            VefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXGHIJKLMNqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW = false
+            efghijklmnopqbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQnopqrstuvwxyzABCDEFGHIJKLMNOPQRShijklm.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
             updateBindDisplay2()
-            print("ROCKET: Menu привязан к " .. menuBindKey.Name)
+            print("Ultra: Menu привязан к " .. efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO.Name)
             return
         end
 
-        if flyBindKey and input.KeyCode == flyBindKey then
-            if flyStatus then disableFly() else enableFly() end
+        if ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF and input.KeyCode == ABCDEFGHIJKLMNOPpqrsturstuvwxyzABCDEF then
+            if qrstuvwxyzABCDEFGHIJKLMNOPQRSTUVhijklmnopqrstubcdefghijklmfghijklmnoabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWstuvwxyzABCDEFGHIJKLMNOPQRST then disableFly() else enableFly() end
             return
         end
 
-        if noclipBindKey and input.KeyCode == noclipBindKey then
+        if HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn and input.KeyCode == HIJKLMNOPQRSTUVWOPQRSTUVWefghijklmn then
             toggleNoclip()
             return
         end
 
-        if speedCarBindKey and input.KeyCode == speedCarBindKey then
+        if lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA and input.KeyCode == lmnopqrstuvwxyzABCDEFGHIJKLMNdefghijklmnopqrstudefghijklmnopqrstuvwxyzABCDEFGHIJKLMABCDEFGHIJKLMNOPQRSTUVWXjklmnopqrstuvwxyzABCwxyzA then
             activateSpeedCar()
             return
         end
 
-        if menuBindKey and input.KeyCode == menuBindKey then
+        if efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO and input.KeyCode == efgvwxyzABCDEFGHIJKLMNOPQRSTUVWXXdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNO then
             toggleMenu()
             return
         end
@@ -1620,121 +1620,121 @@ end
 
 createBindHandler2()
 
--- ============================================================
--- ===== ЗАЩИТА ОТ ВЫКЛЮЧЕНИЯ =====
--- ============================================================
-local function safeCall(func)
-    local success, err = pcall(func)
-    if not success then
-        print("ROCKET: Ошибка перехвачена: " .. tostring(err))
+
+
+
+local CDEFGHIJKLMNOPQRSmnopqrstuvwxyzABCDEFEFGHcdefghijklmno safeCall(func)
+    local stuvwxyzABopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZdefghijklmnopqrstuvwxyzABCDEFGHklmnoCDE, err = pcall(func)
+    if not stuvwxyzABopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZdefghijklmnopqrstuvwxyzABCDEFGHklmnoCDE then
+        print("Ultra: Ошибка перехвачена: " .. tostring(err))
     end
-    return success
+    return stuvwxyzABopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZdefghijklmnopqrstuvwxyzABCDEFGHklmnoCDE
 end
 
-game:GetService("GuiService").WindowFocused:Connect(function()
-    safeCall(function()
-        if menuVisible then
-            mainFrame.Visible = true
-            mainFrame.BackgroundTransparency = 0.15
+game:GetService("GuiService").WindowFocused:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+    safeCall(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+        if jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
+            wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible = true
+            wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BackgroundTransparency = 0.15
         end
     end)
 end)
 
--- ============================================================
--- ===== ПРИНУДИТЕЛЬНОЕ ВОССТАНОВЛЕНИЕ UI =====
--- ============================================================
-local function forceShowUI()
-    screenGui.Enabled = true
-    mainFrame.Visible = true
-    mainFrame.BackgroundTransparency = 0.15
-    openMenuBtn.Visible = true
-    menuVisible = true
-    animationPlaying = false
-    print("ROCKET: UI принудительно восстановлен.")
+
+
+
+local DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV forceShowUI()
+    ymnopqrstutuvwxyzABCDEFGH.Enabled = true
+    wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible = true
+    wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BackgroundTransparency = 0.15
+    opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Visible = true
+    jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM = true
+    GHIJKLMNOPQRST = false
+    print("Ultra: UI принудительно восстановлен.")
 end
 
-openMenuBtn.MouseButton1Click:Connect(function()
+opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     forceShowUI()
 end)
 
-closeMenuBtn.MouseButton1Click:Connect(function()
+wxopquvxyzABCDEFGHIJKLqrstuvwxyzABCDEFG.MouseButton1Click:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     forceShowUI()
 end)
 
-task.spawn(function()
+task.spawn(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     while true do
         task.wait(2)
-        safeCall(function()
-            if menuVisible then
-                if not screenGui.Enabled or not mainFrame.Visible then
+        safeCall(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+            if jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
+                if not ymnopqrstutuvwxyzABCDEFGH.Enabled or not wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible then
                     forceShowUI()
                 end
             end
-            openMenuBtn.Visible = true
+            opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Visible = true
         end)
     end
 end)
 
-userInputService.InputBegan:Connect(function(input, gameProcessed)
+abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputBegan:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input, gameProcessed)
     if gameProcessed then return end
-    if input.KeyCode == Enum.KeyCode.U and (userInputService:IsKeyDown(Enum.KeyCode.LeftControl) or userInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
-        print("ROCKET: Принудительное восстановление UI (Ctrl+U)...")
-        safeCall(function()
+    if input.KeyCode == Enum.KeyCode.U and (abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.LeftControl) or abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.RightControl)) then
+        print("Ultra: Принудительное восстановление UI (Ctrl+U)...")
+        safeCall(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
             forceShowUI()
-            print("ROCKET: UI восстановлен.")
+            print("Ultra: UI восстановлен.")
         end)
     end
 end)
 
-task.spawn(function()
+task.spawn(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     while true do
         task.wait(3)
-        safeCall(function()
-            if menuVisible then
-                if not mainFrame.Visible then
-                    mainFrame.Visible = true
-                    mainFrame.BackgroundTransparency = 0.15
-                    print("ROCKET: Меню восстановлено.")
+        safeCall(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+            if jklmnopqrstuvwxyzABdfghijklmnopqrstuvwxyzABCDEFGHIJKLM then
+                if not wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible then
+                    wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.Visible = true
+                    wxyzABCDEFGHIJKLMNOPQRSTUVWtuvwghijkl.BackgroundTransparency = 0.15
+                    print("Ultra: Меню восстановлено.")
                 end
             end
-            openMenuBtn.Visible = true
+            opqrsstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZCDEFGHIJKLMNOPQRSTUVWXYZijklmnopqrs.Visible = true
         end)
     end
 end)
 
-task.spawn(function()
+task.spawn(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
     while true do
         task.wait(30)
-        safeCall(function()
-            if not bindConnectionMain2 or not bindConnectionMain2.Connected then
-                print("ROCKET: Пересоздаю обработчик биндов...")
+        safeCall(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
+            if not GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX or not GHIJKLMNOPQRSTUVWXYZJKLMNOPzABCDEFGHIJKLMNOPQRSTUijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVRSTUVWX.Connected then
+                print("Ultra: Пересоздаю обработчик биндов...")
                 createBindHandler2()
             end
         end)
     end
 end)
 
-userInputService.InputBegan:Connect(function(input, gameProcessed)
+abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV.InputBegan:Connect(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV(input, gameProcessed)
     if gameProcessed then return end
-    if input.KeyCode == Enum.KeyCode.R and (userInputService:IsKeyDown(Enum.KeyCode.LeftControl) or userInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
-        print("ROCKET: Перезагрузка меню...")
-        safeCall(function()
+    if input.KeyCode == Enum.KeyCode.R and (abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.LeftControl) or abcdefgstuvwxyzABCDEFGHIJKLMNOPQBCDEFGHIJKLMNOBCDEFGHIJKLMNOPQRSTUV:IsKeyDown(Enum.KeyCode.RightControl)) then
+        print("Ultra: Перезагрузка меню...")
+        safeCall(DEFlmnopqrstuvwxyzABCDElmnopqrstuvwxabcdefghijklmnopqrstuvwxyzQRSTUV()
             showMenu()
-            print("ROCKET: Меню перезагружено.")
+            print("Ultra: Меню перезагружено.")
         end)
     end
 end)
 
-print("ROCKET: Защита от выключения активирована.")
-print("ROCKET: Ctrl+U - принудительное восстановление UI.")
+print("Ultra: Защита от выключения активирована.")
+print("Ultra: Ctrl+U - принудительное восстановление UI.")
 
--- ============================================================
--- ===== ЗАПУСК =====
--- ============================================================
+
+
+
 updateBindDisplay2()
 showMenu()
 
-print("ROCKET: Меню загружено. Нажми LeftAlt или кнопку ☰ слева для открытия/закрытия.")
-print("ROCKET: Speed Car активируется по кнопке в меню Misc или по бинду.")
-print("ROCKET: Mon Farm в вкладке Farm с инструкцией.")
-print("ROCKET: Ctrl+U - принудительное восстановление UI.")
+print("Ultra: Меню загружено. Нажми LeftAlt или кнопку ☰ слева для открытия/закрытия.")
+print("Ultra: Speed Car активируется по кнопке в меню Misc или по бинду.")
+print("Ultra: Mon Farm в вкладке Farm с инструкцией.")
+print("Ultra: Ctrl+U - принудительное восстановление UI.")
