@@ -1,5 +1,3 @@
-
-
 local NOPQRlmnopqrstuvwxyzABCDEFGHefghijklmnopqrstuvwxyzAvwxyzABCDEFGHIJK = game.Players.LocalPlayer
 local abcdefghijklmnopqrsNOPQRSTabcdefghijkl = game:GetService("UserInputService")
 local IJKhijklmnopqrstuvwxyzABCDEFGefghijklmnopqrstuvwxyjklmnopqrstuvwxyzABCDEFGHIJKL = game:GetService("TweenService")
