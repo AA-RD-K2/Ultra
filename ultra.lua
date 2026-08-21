@@ -1,4 +1,3 @@
-
 local function printRed(text)
     pcall(function()
         error(text)
